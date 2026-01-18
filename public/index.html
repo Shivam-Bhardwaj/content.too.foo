@@ -513,6 +513,157 @@
     .folder-tree .folder { color: var(--amber); }
     .folder-tree .file { color: var(--text-secondary); }
 
+    /* Modal Tabs */
+    .modal-tabs {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 24px;
+      background: var(--bg-dark);
+      padding: 4px;
+      border-radius: 12px;
+    }
+
+    .modal-tab {
+      flex: 1;
+      padding: 12px 16px;
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: all 0.2s;
+    }
+
+    .modal-tab:hover {
+      color: var(--text-secondary);
+    }
+
+    .modal-tab.active {
+      background: var(--bg-elevated);
+      color: var(--text-primary);
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    /* Social Media Cards */
+    .social-card {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+
+    .social-card-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .social-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .social-icon.youtube { background: rgba(255, 0, 0, 0.15); color: #ff0000; }
+    .social-icon.instagram { background: rgba(225, 48, 108, 0.15); color: #e1306c; }
+    .social-icon.x { background: rgba(255, 255, 255, 0.1); color: #fff; }
+
+    .social-card-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .social-field {
+      margin-bottom: 16px;
+    }
+
+    .social-field:last-child {
+      margin-bottom: 0;
+    }
+
+    .social-field-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .social-field-content {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      white-space: pre-wrap;
+      position: relative;
+      line-height: 1.6;
+    }
+
+    .social-field-content .copy-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    /* Script Section */
+    .script-section {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+
+    .script-section h4 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+    }
+
+    .script-text {
+      background: var(--bg-card);
+      border-radius: 10px;
+      padding: 16px;
+      font-size: 0.9rem;
+      line-height: 1.8;
+      white-space: pre-wrap;
+      position: relative;
+    }
+
+    .script-text.hindi {
+      font-family: 'Noto Sans Devanagari', sans-serif;
+      color: #fbbf24;
+      background: rgba(251, 191, 36, 0.05);
+    }
+
+    .script-text.english {
+      color: var(--text-secondary);
+      font-style: italic;
+    }
+
     .view-btn {
       width: 100%;
       padding: 12px 20px;
@@ -859,12 +1010,28 @@
         <div class="modal-meta" id="modal-meta"></div>
       </div>
       <div class="modal-body">
-        <div class="export-buttons">
-          <button class="export-btn" onclick="exportMidjourney()">Export Midjourney</button>
-          <button class="export-btn" onclick="exportRunway()">Export Runway</button>
-          <button class="export-btn" onclick="exportJSON()">Export JSON</button>
+        <div class="modal-tabs">
+          <button class="modal-tab active" onclick="switchTab('storyboard')">Storyboard</button>
+          <button class="modal-tab" onclick="switchTab('script')">Script</button>
+          <button class="modal-tab" onclick="switchTab('social')">Social Media</button>
         </div>
-        <div class="shots-list" id="shots-list"></div>
+
+        <div id="tab-storyboard" class="tab-content active">
+          <div class="export-buttons">
+            <button class="export-btn" onclick="exportMidjourney()">Export Midjourney</button>
+            <button class="export-btn" onclick="exportRunway()">Export Runway</button>
+            <button class="export-btn" onclick="exportJSON()">Export JSON</button>
+          </div>
+          <div class="shots-list" id="shots-list"></div>
+        </div>
+
+        <div id="tab-script" class="tab-content">
+          <div id="script-content"></div>
+        </div>
+
+        <div id="tab-social" class="tab-content">
+          <div id="social-content"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -1169,6 +1336,13 @@ node scripts/update-status.js 1 published --youtube URL --instagram URL</div>
         </div>
       `).join('');
 
+      // Reset to storyboard tab
+      switchTab('storyboard');
+
+      // Render other tabs
+      renderScriptTab();
+      renderSocialTab();
+
       document.getElementById('modal').classList.add('active');
       document.body.style.overflow = 'hidden';
     }
@@ -1187,6 +1361,182 @@ node scripts/update-status.js 1 published --youtube URL --instagram URL</div>
     function closeAbout() {
       document.getElementById('about-modal').classList.remove('active');
       document.body.style.overflow = '';
+    }
+
+    function switchTab(tabName) {
+      document.querySelectorAll('.modal-tab').forEach(tab => {
+        tab.classList.toggle('active', tab.textContent.toLowerCase().includes(tabName));
+      });
+      document.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.toggle('active', content.id === 'tab-' + tabName);
+      });
+    }
+
+    function renderScriptTab() {
+      const container = document.getElementById('script-content');
+      if (!currentTopic) return;
+
+      let html = '';
+
+      // Full script if available
+      if (currentTopic.script_hindi) {
+        html += `
+          <div class="script-section">
+            <h4>Full Script (Hindi)</h4>
+            <div class="script-text hindi">${currentTopic.script_hindi}</div>
+          </div>`;
+      }
+
+      if (currentTopic.script_english) {
+        html += `
+          <div class="script-section">
+            <h4>Full Script (English)</h4>
+            <div class="script-text english">${currentTopic.script_english}</div>
+          </div>`;
+      }
+
+      // If no full script, compile from shots
+      if (!currentTopic.script_hindi && !currentTopic.script_english) {
+        const hindiNarration = currentTopic.shots.map(s => s.narration_hindi || '').filter(Boolean).join(' ');
+        const englishNarration = currentTopic.shots.map(s => s.narration || '').filter(Boolean).join(' ');
+
+        html += `
+          <div class="script-section">
+            <h4>Compiled Narration (Hindi)</h4>
+            <div class="script-text hindi">${hindiNarration}</div>
+          </div>
+          <div class="script-section">
+            <h4>Compiled Narration (English)</h4>
+            <div class="script-text english">${englishNarration}</div>
+          </div>`;
+      }
+
+      container.innerHTML = html;
+    }
+
+    function renderSocialTab() {
+      const container = document.getElementById('social-content');
+      if (!currentTopic) return;
+
+      const social = currentTopic.social_media;
+
+      if (!social) {
+        container.innerHTML = `
+          <div class="social-card">
+            <p style="color: var(--text-muted); text-align: center; padding: 40px;">
+              No social media metadata available for this topic yet.
+            </p>
+          </div>`;
+        return;
+      }
+
+      let html = '';
+
+      // YouTube
+      if (social.youtube) {
+        html += `
+          <div class="social-card">
+            <div class="social-card-header">
+              <div class="social-icon youtube">YT</div>
+              <div class="social-card-title">YouTube Shorts</div>
+            </div>
+            <div class="social-field">
+              <div class="social-field-label">Title</div>
+              <div class="social-field-content">
+                <button class="copy-btn" onclick="copyText(this, '${escapeForCopy(social.youtube.title)}')">Copy</button>
+                ${social.youtube.title}
+              </div>
+            </div>
+            <div class="social-field">
+              <div class="social-field-label">Description</div>
+              <div class="social-field-content">
+                <button class="copy-btn" onclick="copyText(this, \`${escapeForCopy(social.youtube.description)}\`)">Copy</button>
+                ${social.youtube.description}
+              </div>
+            </div>
+            <div class="social-field">
+              <div class="social-field-label">Tags</div>
+              <div class="social-field-content">
+                <button class="copy-btn" onclick="copyText(this, '${escapeForCopy(social.youtube.tags)}')">Copy</button>
+                ${social.youtube.tags}
+              </div>
+            </div>
+            ${social.youtube.pinned_comment ? `
+            <div class="social-field">
+              <div class="social-field-label">Pinned Comment</div>
+              <div class="social-field-content">
+                <button class="copy-btn" onclick="copyText(this, \`${escapeForCopy(social.youtube.pinned_comment)}\`)">Copy</button>
+                ${social.youtube.pinned_comment}
+              </div>
+            </div>` : ''}
+          </div>`;
+      }
+
+      // Instagram
+      if (social.instagram) {
+        html += `
+          <div class="social-card">
+            <div class="social-card-header">
+              <div class="social-icon instagram">IG</div>
+              <div class="social-card-title">Instagram Reels</div>
+            </div>
+            <div class="social-field">
+              <div class="social-field-label">Caption</div>
+              <div class="social-field-content">
+                <button class="copy-btn" onclick="copyText(this, \`${escapeForCopy(social.instagram.caption)}\`)">Copy</button>
+                ${social.instagram.caption}
+              </div>
+            </div>
+          </div>`;
+      }
+
+      // X (Twitter)
+      if (social.x) {
+        html += `
+          <div class="social-card">
+            <div class="social-card-header">
+              <div class="social-icon x">X</div>
+              <div class="social-card-title">X (Twitter)</div>
+            </div>
+            <div class="social-field">
+              <div class="social-field-label">Post</div>
+              <div class="social-field-content">
+                <button class="copy-btn" onclick="copyText(this, \`${escapeForCopy(social.x.post)}\`)">Copy</button>
+                ${social.x.post}
+              </div>
+            </div>
+          </div>`;
+      }
+
+      // Hashtags
+      if (social.hashtags) {
+        html += `
+          <div class="social-card">
+            <div class="social-card-header">
+              <div class="social-icon" style="background: var(--accent-gradient); color: white;">#</div>
+              <div class="social-card-title">Hashtags</div>
+            </div>
+            <div class="social-field">
+              <div class="social-field-content">
+                <button class="copy-btn" onclick="copyText(this, '${escapeForCopy(social.hashtags)}')">Copy</button>
+                ${social.hashtags}
+              </div>
+            </div>
+          </div>`;
+      }
+
+      container.innerHTML = html;
+    }
+
+    function escapeForCopy(str) {
+      if (!str) return '';
+      return str.replace(/`/g, '\\`').replace(/\$/g, '\\$').replace(/'/g, "\\'");
+    }
+
+    function copyText(btn, text) {
+      navigator.clipboard.writeText(text.replace(/\\`/g, '`').replace(/\\\$/g, '$').replace(/\\'/g, "'"));
+      btn.textContent = 'Copied!';
+      setTimeout(() => btn.textContent = 'Copy', 2000);
     }
 
     function copyPrompt(btn, type, shotIndex) {
