@@ -1,0 +1,1 @@
+# Assets\n\nThis directory contains generated assets for each topic.\n\nStructure:\n```\nassets/\n├── 001/\n│   ├── midjourney/   # Key frames from Midjourney\n│   ├── runway/       # Video clips from RunwayAI\n│   └── final/        # Final exported videos\n├── 002/\n...\n```\n\nUse `scripts/sync-assets.sh` to upload to the server.

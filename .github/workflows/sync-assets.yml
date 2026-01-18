@@ -1,0 +1,74 @@
+name: Sync Assets to Server
+
+on:
+  workflow_dispatch:
+    inputs:
+      topic_id:
+        description: 'Topic ID to sync (e.g., 001, 042) or "all"'
+        required: true
+        default: 'all'
+      asset_type:
+        description: 'Asset type to sync'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - midjourney
+          - runway
+          - final
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DEPLOY_KEY }}" | base64 -d > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H ${{ secrets.DEPLOY_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Sync assets
+        run: |
+          TOPIC="${{ github.event.inputs.topic_id }}"
+          TYPE="${{ github.event.inputs.asset_type }}"
+
+          SSH_CMD="ssh -i ~/.ssh/deploy_key ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}"
+          SCP_CMD="scp -i ~/.ssh/deploy_key"
+          REMOTE_BASE="/home/content/assets/content"
+
+          echo "Syncing topic: $TOPIC, type: $TYPE"
+
+          if [ "$TOPIC" = "all" ]; then
+            # Sync all topics
+            if [ -d "assets" ]; then
+              rsync -avz -e "ssh -i ~/.ssh/deploy_key" \
+                assets/ \
+                ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:$REMOTE_BASE/
+            fi
+          else
+            # Sync specific topic
+            PADDED=$(printf "%03d" $TOPIC)
+            if [ -d "assets/$PADDED" ]; then
+              if [ "$TYPE" = "all" ]; then
+                rsync -avz -e "ssh -i ~/.ssh/deploy_key" \
+                  assets/$PADDED/ \
+                  ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:$REMOTE_BASE/$PADDED/
+              else
+                rsync -avz -e "ssh -i ~/.ssh/deploy_key" \
+                  assets/$PADDED/$TYPE/ \
+                  ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:$REMOTE_BASE/$PADDED/$TYPE/
+              fi
+            fi
+          fi
+
+      - name: Update status
+        run: |
+          SSH_CMD="ssh -i ~/.ssh/deploy_key ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}"
+          $SSH_CMD "cd /home/content/assets/content && \
+            echo '{\"last_sync\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\", \"synced_by\": \"github-actions\"}' > status.json"
+          echo "Sync completed at $(date)"
