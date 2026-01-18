@@ -22,6 +22,7 @@
       --green: #22c55e;
       --amber: #f59e0b;
       --rose: #f43f5e;
+      --cyan: #06b6d4;
       --border: rgba(255,255,255,0.06);
       --border-hover: rgba(255,255,255,0.1);
       --glow: rgba(99, 102, 241, 0.15);
@@ -294,6 +295,83 @@
     .dot.video { background: var(--rose); }
     .dot.image { background: var(--green); }
     .dot.text { background: var(--amber); }
+
+    .status-badge {
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 10px;
+      border-radius: 100px;
+      margin-left: auto;
+    }
+
+    .status-badge.planned {
+      background: rgba(107, 114, 128, 0.2);
+      color: var(--text-muted);
+    }
+
+    .status-badge.in_progress {
+      background: rgba(6, 182, 212, 0.15);
+      color: var(--cyan);
+    }
+
+    .status-badge.published {
+      background: rgba(34, 197, 94, 0.15);
+      color: var(--green);
+    }
+
+    .social-links {
+      display: flex;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 6px 12px;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text-secondary);
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .social-link:hover {
+      border-color: var(--accent-primary);
+      color: var(--text-primary);
+    }
+
+    .social-link.youtube:hover { border-color: #ff0000; color: #ff0000; }
+    .social-link.instagram:hover { border-color: #e1306c; color: #e1306c; }
+    .social-link.x:hover { border-color: #fff; color: #fff; }
+
+    .progress-bar {
+      width: 100%;
+      height: 4px;
+      background: var(--bg-card);
+      border-radius: 2px;
+      overflow: hidden;
+      margin-top: 32px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--accent-gradient);
+      transition: width 0.5s ease;
+    }
+
+    .status-filters {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      margin-top: 12px;
+    }
 
     .view-btn {
       width: 100%;
@@ -585,20 +663,25 @@
     <p class="tagline">Production Database</p>
     <div class="stats">
       <div class="stat">
-        <div class="stat-value" id="total-topics">100</div>
-        <div class="stat-label">Topics</div>
+        <div class="stat-value" id="published-count">0</div>
+        <div class="stat-label">Published</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value" id="progress-count">0</div>
+        <div class="stat-label">In Progress</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value" id="planned-count">100</div>
+        <div class="stat-label">Planned</div>
       </div>
       <div class="stat">
         <div class="stat-value" id="total-shots">2,475</div>
-        <div class="stat-label">Shots</div>
+        <div class="stat-label">Total Shots</div>
       </div>
-      <div class="stat">
-        <div class="stat-value" id="video-shots">1,541</div>
-        <div class="stat-label">Video</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value" id="image-shots">724</div>
-        <div class="stat-label">Image</div>
+    </div>
+    <div class="container">
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
       </div>
     </div>
   </header>
@@ -607,6 +690,12 @@
     <div class="container">
       <div class="filters" id="category-filters">
         <button class="filter-btn active" data-category="all">All</button>
+      </div>
+      <div class="status-filters" id="status-filters">
+        <button class="filter-btn active" data-status="all">All Status</button>
+        <button class="filter-btn" data-status="published">Published</button>
+        <button class="filter-btn" data-status="in_progress">In Progress</button>
+        <button class="filter-btn" data-status="planned">Planned</button>
       </div>
       <div class="search-wrapper">
         <input type="text" class="search-input" id="search-input" placeholder="Search topics...">
@@ -642,12 +731,30 @@
 
   <script>
     let storyboards = [];
+    let statusData = {};
     let currentTopic = null;
+    let currentCategory = 'all';
+    let currentStatus = 'all';
 
     async function loadData() {
       try {
-        const response = await fetch('data.json');
-        storyboards = await response.json();
+        const [dataRes, statusRes] = await Promise.all([
+          fetch('data.json'),
+          fetch('status.json').catch(() => ({ json: () => ({ topics: {} }) }))
+        ]);
+        storyboards = await dataRes.json();
+        const statusJson = await statusRes.json();
+        statusData = statusJson.topics || {};
+
+        // Merge status into storyboards
+        storyboards.forEach(sb => {
+          const status = statusData[sb.topic_id] || { status: 'planned' };
+          sb.status = status.status || 'planned';
+          sb.youtube_url = status.youtube_url;
+          sb.instagram_url = status.instagram_url;
+          sb.x_url = status.x_url;
+        });
+
         initializeFilters();
         renderTopics(storyboards);
         updateStats();
@@ -657,18 +764,23 @@
     }
 
     function updateStats() {
-      let totalShots = 0, videoShots = 0, imageShots = 0;
+      let totalShots = 0;
+      let published = 0, inProgress = 0, planned = 0;
+
       storyboards.forEach(sb => {
         totalShots += sb.total_shots || 0;
-        if (sb.shot_breakdown) {
-          videoShots += sb.shot_breakdown.video_shots || 0;
-          imageShots += sb.shot_breakdown.image_shots || 0;
-        }
+        if (sb.status === 'published') published++;
+        else if (sb.status === 'in_progress') inProgress++;
+        else planned++;
       });
-      document.getElementById('total-topics').textContent = storyboards.length;
+
+      document.getElementById('published-count').textContent = published;
+      document.getElementById('progress-count').textContent = inProgress;
+      document.getElementById('planned-count').textContent = planned;
       document.getElementById('total-shots').textContent = totalShots.toLocaleString();
-      document.getElementById('video-shots').textContent = videoShots.toLocaleString();
-      document.getElementById('image-shots').textContent = imageShots.toLocaleString();
+
+      const progressPercent = (published / storyboards.length) * 100;
+      document.getElementById('progress-fill').style.width = progressPercent + '%';
     }
 
     function initializeFilters() {
@@ -682,14 +794,43 @@
         btn.onclick = () => filterByCategory(cat);
         filtersDiv.appendChild(btn);
       });
+
+      // Status filter listeners
+      document.querySelectorAll('#status-filters .filter-btn').forEach(btn => {
+        btn.onclick = () => filterByStatus(btn.dataset.status);
+      });
     }
 
     function filterByCategory(category) {
-      document.querySelectorAll('.filter-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.category === category || (category === 'all' && btn.dataset.category === 'all'));
+      currentCategory = category;
+      document.querySelectorAll('#category-filters .filter-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.category === category);
       });
-      const filtered = category === 'all' ? storyboards : storyboards.filter(s => s.category === category);
+      applyFilters();
+    }
+
+    function filterByStatus(status) {
+      currentStatus = status;
+      document.querySelectorAll('#status-filters .filter-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.status === status);
+      });
+      applyFilters();
+    }
+
+    function applyFilters() {
+      let filtered = storyboards;
+      if (currentCategory !== 'all') {
+        filtered = filtered.filter(s => s.category === currentCategory);
+      }
+      if (currentStatus !== 'all') {
+        filtered = filtered.filter(s => s.status === currentStatus);
+      }
       renderTopics(filtered);
+    }
+
+    function getStatusLabel(status) {
+      const labels = { published: 'Published', in_progress: 'In Progress', planned: 'Planned' };
+      return labels[status] || 'Planned';
     }
 
     function renderTopics(topics) {
@@ -699,6 +840,7 @@
             <div class="card-meta">
               <span class="topic-number">#${String(topic.topic_id).padStart(2, '0')}</span>
               <span class="topic-category">${topic.category}</span>
+              <span class="status-badge ${topic.status}">${getStatusLabel(topic.status)}</span>
             </div>
             <h3 class="topic-title">${topic.title}</h3>
           </div>
@@ -708,6 +850,12 @@
               <span class="shot-stat"><span class="dot image"></span>${topic.shot_breakdown?.image_shots || 0} Image</span>
               <span class="shot-stat"><span class="dot text"></span>${topic.shot_breakdown?.text_shots || 0} Text</span>
             </div>
+            ${topic.status === 'published' ? `
+            <div class="social-links" onclick="event.stopPropagation()">
+              ${topic.youtube_url ? `<a href="${topic.youtube_url}" target="_blank" class="social-link youtube">YouTube</a>` : ''}
+              ${topic.instagram_url ? `<a href="${topic.instagram_url}" target="_blank" class="social-link instagram">Instagram</a>` : ''}
+              ${topic.x_url ? `<a href="${topic.x_url}" target="_blank" class="social-link x">X</a>` : ''}
+            </div>` : ''}
             <button class="view-btn">View Storyboard &rarr;</button>
           </div>
         </div>
@@ -817,10 +965,16 @@
 
     document.getElementById('search-input').addEventListener('input', function(e) {
       const query = e.target.value.toLowerCase();
-      const filtered = storyboards.filter(s =>
+      let filtered = storyboards.filter(s =>
         s.title.toLowerCase().includes(query) ||
         s.category.toLowerCase().includes(query)
       );
+      if (currentCategory !== 'all') {
+        filtered = filtered.filter(s => s.category === currentCategory);
+      }
+      if (currentStatus !== 'all') {
+        filtered = filtered.filter(s => s.status === currentStatus);
+      }
       renderTopics(filtered);
     });
 
