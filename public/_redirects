@@ -1,0 +1,2 @@
+# Redirect www to non-www
+https://www.content.too.foo/* https://content.too.foo/:splat 301

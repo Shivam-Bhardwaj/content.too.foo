@@ -1,0 +1,16 @@
+{
+  "name": "content.too.foo",
+  "version": "1.0.0",
+  "description": "Precision Shorts - Production Database for 100 educational videos",
+  "scripts": {
+    "deploy": "wrangler pages deploy public --project-name=precision-shorts",
+    "dev": "npx serve public",
+    "process": "node scripts/add_hindi_narration.js"
+  },
+  "keywords": ["educational", "shorts", "storyboard", "hindi"],
+  "author": "Shivam Bhardwaj",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

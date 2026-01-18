@@ -1,0 +1,7 @@
+/*
+  Access-Control-Allow-Origin: *
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+
+/data.json
+  Cache-Control: public, max-age=3600
