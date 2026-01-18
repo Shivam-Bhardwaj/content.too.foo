@@ -1,0 +1,59 @@
+{
+  "project": {
+    "name": "content.too.foo",
+    "type": "content-production",
+    "language": "hindi-primary",
+    "platform": "youtube-shorts"
+  },
+  "defaults": {
+    "video_duration": 90,
+    "aspect_ratio": "9:16",
+    "midjourney_version": "6.1",
+    "midjourney_stylize": 350
+  },
+  "paths": {
+    "data": "public/data.json",
+    "status": "public/status.json",
+    "scripts": "scripts/",
+    "assets": "assets/"
+  },
+  "server": {
+    "host": "144.126.145.3",
+    "user": "content",
+    "ssh_key": "~/.ssh/content_too_foo",
+    "remote_path": "/home/content/assets/content/"
+  },
+  "categories": [
+    "Ancient",
+    "Disaster",
+    "Space",
+    "Physics",
+    "Chemistry",
+    "Biology",
+    "Psychology",
+    "Genius",
+    "Modern",
+    "Nature",
+    "Math",
+    "Unexpected",
+    "Standard",
+    "Body"
+  ],
+  "shot_sections": [
+    "HOOK",
+    "CONTEXT",
+    "BUILD",
+    "CLIMAX",
+    "REVEAL",
+    "EXTENSION",
+    "HOOK_OUT"
+  ],
+  "asset_types": ["IMAGE", "VIDEO", "TEXT"],
+  "unit_conversions": {
+    "usd_to_inr": 90,
+    "mile_to_km": 1.60934,
+    "foot_to_m": 0.3048,
+    "pound_to_kg": 0.453592,
+    "fahrenheit_to_celsius": "subtract 32, multiply by 5/9"
+  }
+}
