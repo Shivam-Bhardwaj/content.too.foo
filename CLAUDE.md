@@ -283,3 +283,7 @@ cat public/data.json | grep '"topic_id"' | wc -l
 7. **Commit messages** - Include topic numbers and what changed.
 
 8. **Test locally** - Run `npm run dev` to preview changes before pushing.
+
+9. **No hardcoded counts in UI** - Never hardcode topic counts, stats, or other data-derived numbers in the HTML. Always use JavaScript to populate these dynamically from the loaded data (e.g., `storyboards.length`). This includes taglines, About sections, and any display text that references quantities.
+
+10. **Use CSS variables** - All colors, spacing, typography, and other design tokens should use CSS custom properties defined in `:root`. Never hardcode pixel values or colors directly in component styles.
