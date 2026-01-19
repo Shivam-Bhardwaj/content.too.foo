@@ -67763,7 +67763,7 @@
         "tc_out": "00:02.5",
         "duration": 2.5,
         "section": "HOOK",
-        "narration": "Your body remembers every disease it's ever fought.",
+        "narration": "Did you get chickenpox as a child? It'll never come back.",
         "word_count": 10,
         "asset": "VIDEO",
         "frame": "MCU",
@@ -67786,7 +67786,7 @@
         "match_to": null,
         "mj_prompt": null,
         "runway_prompt": "Slow push toward human torso, body interior illuminated with warm golden immune system glow, visualization of cellular memory activation",
-        "narration_hindi": "Tumhara body har disease yaad rakhta hai jisse wo kabhi ladha hai."
+        "narration_hindi": "Tumhe bachpan mein maata nikli thi? Dobara kabhi nahi niklegi."
       },
       {
         "shot_id": "S02",
@@ -67794,7 +67794,7 @@
         "tc_out": "00:05.0",
         "duration": 2.5,
         "section": "HOOK",
-        "narration": "Every single one.",
+        "narration": "Because your body NEVER forgets.",
         "word_count": 3,
         "asset": "IMAGE",
         "frame": "CU",
@@ -67819,7 +67819,7 @@
         "transition_out": "cut",
         "match_to": "Memory library",
         "mj_prompt": "Memory cells visualized as glowing golden library shelves, each shelf holding different disease records, warm golden light, reverent memory aesthetic --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": "Har ek."
+        "narration_hindi": "Kyunki tumhari body KABHI nahi bhulti."
       },
       {
         "shot_id": "S03",
@@ -67827,7 +67827,7 @@
         "tc_out": "00:08.0",
         "duration": 3,
         "section": "HOOK",
-        "narration": "That's why you can only get chickenpox once.",
+        "narration": "It remembers every disease it's ever fought.",
         "word_count": 10,
         "asset": "VIDEO",
         "frame": "MCU",
@@ -67850,7 +67850,7 @@
         "match_to": null,
         "mj_prompt": null,
         "runway_prompt": "Medium push forward as chickenpox viral particles approach immune barrier, bouncing back rejected, protective wall effect, recognition and rejection clear",
-        "narration_hindi": "Isliye tumhe chickenpox sirf ek baar hoti hai."
+        "narration_hindi": "Har ek bimari yaad rakhti hai jisse kabhi ladhi hai."
       },
       {
         "shot_id": "S04",
@@ -67891,7 +67891,7 @@
         "tc_out": "00:13.5",
         "duration": 3,
         "section": "CONTEXT",
-        "narration": "Your immune system is the most sophisticated army ever assembled.",
+        "narration": "Inside your body is an army. The most powerful army in the world.",
         "word_count": 12,
         "asset": "VIDEO",
         "frame": "EWS",
@@ -67914,7 +67914,7 @@
         "match_to": null,
         "mj_prompt": null,
         "runway_prompt": "Slow pan right across visualization of immune system mobilizing like military forces, cells organizing, tactical formation, powerful sophisticated army feeling",
-        "narration_hindi": "Tumhara immune system ab tak assembled sabse sophisticated army hai."
+        "narration_hindi": "Tumhari body ke andar ek army hai. Duniya ki sabse powerful army."
       },
       {
         "shot_id": "S06",
@@ -67922,7 +67922,7 @@
         "tc_out": "00:16.5",
         "duration": 3,
         "section": "CONTEXT",
-        "narration": "When a pathogen invades, your body launches an immediate response.",
+        "narration": "When a virus or bacteria enters, your body attacks immediately.",
         "word_count": 11,
         "asset": "IMAGE",
         "frame": "CU",
@@ -67947,7 +67947,7 @@
         "transition_out": "cut",
         "match_to": "Alert to attack",
         "mj_prompt": "Pathogen breaching skin barrier with red alert light spreading through body, emergency response visualization, urgent cellular communication --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": "Jab pathogen invade karta hai, tumhara body immediate response launch karta hai."
+        "narration_hindi": "Jab koi virus ya bacteria ghusta hai, body turant attack karti hai."
       },
       {
         "shot_id": "S07",
@@ -67955,7 +67955,7 @@
         "tc_out": "00:19.5",
         "duration": 3,
         "section": "BUILD",
-        "narration": "White blood cells attack anything foreign.",
+        "narration": "White blood cells spring into action.",
         "word_count": 6,
         "asset": "VIDEO",
         "frame": "ECU",
@@ -67978,7 +67978,7 @@
         "match_to": null,
         "mj_prompt": null,
         "runway_prompt": "Fast push forward into white blood cell attack, cells moving aggressively to engulf invaders, dramatic red and gold lighting, intense combat action",
-        "narration_hindi": "White blood cells kisi bhi foreign cheez pe attack karti hain."
+        "narration_hindi": "White blood cells turant action mein aa jaati hain."
       },
       {
         "shot_id": "S08",
@@ -68011,7 +68011,7 @@
         "transition_out": "dissolve",
         "match_to": "Learning to cells",
         "mj_prompt": "Visualization of immune system learning, neural-like connections forming between cells, golden light of understanding, wisdom emerging from experience --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": "Lekin yahan genius part hai - tumhara body seekhta hai."
+        "narration_hindi": "Lekin yahan genius part hai - tumhari body seekhti hai."
       },
       {
         "shot_id": "S09",
@@ -68019,7 +68019,7 @@
         "tc_out": "00:26.0",
         "duration": 3,
         "section": "BUILD",
-        "narration": "Special cells called B-cells create antibodies.",
+        "narration": "Your body has a special cell - the B-cell. It's a factory for antibodies - chemical weapons that target only one specific invader.",
         "word_count": 8,
         "asset": "IMAGE",
         "frame": "MACRO",
@@ -68044,7 +68044,7 @@
         "transition_out": "cut",
         "match_to": "Antibodies produced",
         "mj_prompt": "B-cell macro visualization producing glowing Y-shaped antibodies, protein structures evident, blue laboratory lighting, molecular precision --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": "B-cells special cells antibodies create karte hain, proteins jo specifically us invader ko lock karne ke liye custom-designed hain."
+        "narration_hindi": "Body mein ek special cell hoti hai - B-cell. Ye factory hai antibodies ki - chemical hathiyaar jo specifically ek hi invader ko target karte hain."
       },
       {
         "shot_id": "S10",
@@ -68052,7 +68052,7 @@
         "tc_out": "00:29.0",
         "duration": 3,
         "section": "BUILD",
-        "narration": "Proteins custom-designed to lock onto invaders.",
+        "narration": "Every invader has a unique shape. Antibody fits exactly onto that shape - key into lock. Locked, marked, and white blood cells finish the job.",
         "word_count": 8,
         "asset": "VIDEO",
         "frame": "ECU",
@@ -68075,7 +68075,7 @@
         "match_to": null,
         "mj_prompt": null,
         "runway_prompt": "Slow push forward as antibodies lock onto pathogenic targets with perfect molecular fit, glowing engagement, precision targeting mechanism",
-        "narration_hindi": "Infection beat hone ke baad, zyada tar ye cells mar jaate hain."
+        "narration_hindi": "Har invader ka unique shape hota hai. Antibody exactly usi shape pe fit hoti hai - chaabi taale mein. Lock hua, mark hua, aur white blood cells kaam tamaam kar deti hain."
       },
       {
         "shot_id": "S11",
@@ -68083,7 +68083,7 @@
         "tc_out": "00:32.5",
         "duration": 3.5,
         "section": "REVEAL",
-        "narration": "Once infection is beaten, most of these cells die.",
+        "narration": "When the infection is over, most soldiers die.",
         "word_count": 10,
         "asset": "VIDEO",
         "frame": "CU",
@@ -68106,7 +68106,7 @@
         "match_to": "Fade to memory",
         "mj_prompt": null,
         "runway_prompt": "Slow pull back as immune cells fade away after victory, golden light diminishing, peaceful conclusion to battle",
-        "narration_hindi": "Lekin kuch memory cells mein transform ho jaate hain."
+        "narration_hindi": "Jab infection khatam hota hai, zyada tar soldiers mar jaate hain."
       },
       {
         "shot_id": "S12",
@@ -68114,7 +68114,7 @@
         "tc_out": "00:35.5",
         "duration": 3,
         "section": "REVEAL",
-        "narration": "But some transform into memory cells.",
+        "narration": "But some... some become permanent guards. Memory cells.",
         "word_count": 7,
         "asset": "IMAGE",
         "frame": "CU",
@@ -68139,7 +68139,7 @@
         "transition_out": "dissolve",
         "match_to": "Memory to guardians",
         "mj_prompt": "Cell transformation into memory cell, glowing with eternal golden light, sentinel transformation visible, eternal guardian aesthetic --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": "Wo decades tak jeete hain, kabhi kabhi tumhari poori life, bas wait karte hain."
+        "narration_hindi": "Lekin kuch... kuch permanent guards ban jaate hain. Memory cells."
       },
       {
         "shot_id": "S13",
@@ -68147,7 +68147,7 @@
         "tc_out": "00:39.0",
         "duration": 3.5,
         "section": "REVEAL",
-        "narration": "They live for decades, sometimes your entire life, just waiting.",
+        "narration": "Memory cells can live for 50 years. Longer than you! And when the same enemy returns, the reaction is 100 times faster.",
         "word_count": 12,
         "asset": "VIDEO",
         "frame": "WS",
@@ -68170,7 +68170,7 @@
         "match_to": null,
         "mj_prompt": null,
         "runway_prompt": "Slow orbit around memory cells standing eternal vigil, time passage visualized around them, decades flowing by, constant watchful presence",
-        "narration_hindi": "Agar wahi pathogen kabhi wapas aaye, ye memory cells instantly recognize karte hain."
+        "narration_hindi": "Memory cells 50 saal tak jee sakti hain. Tumse bhi zyada! Aur jab wahi dushman dobara aaye, reaction 100 guna fast hota hai."
       },
       {
         "shot_id": "S14",
@@ -68178,7 +68178,7 @@
         "tc_out": "00:42.5",
         "duration": 3.5,
         "section": "REVEAL",
-        "narration": "If that pathogen ever returns, they recognize it instantly.",
+        "narration": "If that same pathogen returns? Your body says - I know you.",
         "word_count": 10,
         "asset": "IMAGE",
         "frame": "CU",
@@ -68203,7 +68203,7 @@
         "transition_out": "cut",
         "match_to": "Recognition to attack",
         "mj_prompt": "Memory cells instantly recognizing returning pathogen, glowing with alert recognition light, pattern matching visualization, immediate response --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": "Wo rapidly multiply karte hain aur tum beemar feel karo usse pehle antibodies produce kar dete hain."
+        "narration_hindi": "Agar wahi keetanu dobara aaya? Body kehti hai - Tujhe toh main pehchanti hoon."
       },
       {
         "shot_id": "S15",
@@ -68211,7 +68211,7 @@
         "tc_out": "00:46.0",
         "duration": 3.5,
         "section": "REVEAL",
-        "narration": "They multiply rapidly and produce antibodies before you feel sick.",
+        "narration": "Instant attack. Destroyed before you even feel sick.",
         "word_count": 11,
         "asset": "VIDEO",
         "frame": "ECU",
@@ -68234,7 +68234,7 @@
         "match_to": null,
         "mj_prompt": null,
         "runway_prompt": "Fast push forward through rapid memory cell multiplication and antibody production, exponential growth visualization, fast-action gold lighting, overwhelming response",
-        "narration_hindi": "Invader ko kabhi chance nahi milta."
+        "narration_hindi": "Turant attack. Tum beemar feel karo usse pehle hi khatam."
       },
       {
         "shot_id": "S16",
@@ -68242,7 +68242,7 @@
         "tc_out": "00:49.0",
         "duration": 3,
         "section": "EVIDENCE",
-        "narration": "The invader never gets a chance.",
+        "narration": "The invader doesn't stand a chance.",
         "word_count": 5,
         "asset": "IMAGE",
         "frame": "CU",
@@ -68267,7 +68267,7 @@
         "transition_out": "dissolve",
         "match_to": "Victory to explanation",
         "mj_prompt": "Pathogen completely overwhelmed by immune response before replication, golden victory light, rapid defeat visualization --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": "Isliye tumhe chickenpox sirf ek baar hoti hai - tumhara body yaad rakhta hai."
+        "narration_hindi": "Invader ko chance hi nahi milta."
       },
       {
         "shot_id": "S17",
@@ -68275,7 +68275,7 @@
         "tc_out": "00:52.0",
         "duration": 3,
         "section": "EVIDENCE",
-        "narration": "This is why you only get chickenpox once.",
+        "narration": "That's why you only get chickenpox once.",
         "word_count": 8,
         "asset": "VIDEO",
         "frame": "MCU",
@@ -68298,7 +68298,7 @@
         "match_to": null,
         "mj_prompt": null,
         "runway_prompt": "Slow push forward showing person protected by immune system barrier, returning chickenpox bouncing off protective shield",
-        "narration_hindi": "Vaccines is system ko brilliantly hack karti hain."
+        "narration_hindi": "Isliye maata sirf ek baar nikalti hai."
       },
       {
         "shot_id": "S18",
@@ -68331,7 +68331,7 @@
         "transition_out": "dissolve",
         "match_to": "Memory to vaccine",
         "mj_prompt": "Memory visualization in glowing warm gold, neural pathways and cellular memories, lifetime of immune history recorded --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": "Wo tumhare immune system ko pathogen ka weakened ya dead version dikhati hain, ya sirf uska ek piece."
+        "narration_hindi": "Tumhari body yaad rakhti hai."
       },
       {
         "shot_id": "S19",
@@ -68339,7 +68339,7 @@
         "tc_out": "00:58.0",
         "duration": 3,
         "section": "EVIDENCE",
-        "narration": "Vaccines hack this system brilliantly.",
+        "narration": "Vaccines hack this system. A cheat code.",
         "word_count": 6,
         "asset": "VIDEO",
         "frame": "CU",
@@ -68362,7 +68362,7 @@
         "match_to": null,
         "mj_prompt": null,
         "runway_prompt": "Slow push showing vaccine introduction to immune system, brilliant hack visualization, safe training scenario, clever elegant design",
-        "narration_hindi": "Tumhara body usse ladhta hai, memory cells create karta hai, aur bhool jata hai ki kuch hua tha."
+        "narration_hindi": "Vaccines is system ko hack karti hain. Ek cheat code."
       },
       {
         "shot_id": "S20",
@@ -68370,7 +68370,7 @@
         "tc_out": "01:01.5",
         "duration": 3.5,
         "section": "BUILD",
-        "narration": "They show your immune system a weakened pathogen.",
+        "narration": "A vaccine is a dead or half-dead version of the pathogen.",
         "word_count": 9,
         "asset": "IMAGE",
         "frame": "MACRO",
@@ -68395,7 +68395,7 @@
         "transition_out": "cut",
         "match_to": "Training to response",
         "mj_prompt": "Weakened pathogen presented to immune cells for safe training, laboratory setting, educational visualization --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": "Lekin wo memory cells guard pe rehte hain."
+        "narration_hindi": "Vaccine ek keetanu ka mara hua ya adhmara version hota hai."
       },
       {
         "shot_id": "S21",
@@ -68403,7 +68403,7 @@
         "tc_out": "01:05.0",
         "duration": 3.5,
         "section": "BUILD",
-        "narration": "Your body fights it, creates memory cells, forgets it ever happened.",
+        "narration": "Your body fights it, creates memory cells, and forgets it ever happened.",
         "word_count": 11,
         "asset": "VIDEO",
         "frame": "ECU",
@@ -68426,7 +68426,7 @@
         "match_to": "Memory formation",
         "mj_prompt": null,
         "runway_prompt": "Slow push through immune response to weakened pathogen, memory cells forming, peaceful conclusion, learning and forgetting process",
-        "narration_hindi": "Jab real disease aaye, tumhara body pehle se jaanta hai kaise ladhna hai."
+        "narration_hindi": "Body ladhti hai, memory cells banati hai, aur bhool jaati hai ki kuch hua tha."
       },
       {
         "shot_id": "S22",
@@ -68434,7 +68434,7 @@
         "tc_out": "01:08.0",
         "duration": 3,
         "section": "BUILD",
-        "narration": "But those memory cells remain on guard.",
+        "narration": "But those guards are permanently deployed.",
         "word_count": 7,
         "asset": "IMAGE",
         "frame": "CU",
@@ -68459,7 +68459,7 @@
         "transition_out": "cut",
         "match_to": "Guards to real disease",
         "mj_prompt": "Memory cells positioned as eternal sentinels, glowing golden watch light, protective positioning evident --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": "Tumhe immunity milti hai bina beemar hue."
+        "narration_hindi": "Lekin wo guards permanently deploy ho gaye."
       },
       {
         "shot_id": "S23",
@@ -68467,7 +68467,7 @@
         "tc_out": "01:11.0",
         "duration": 3,
         "section": "IMPACT",
-        "narration": "When the real disease arrives, your body already knows how to fight it.",
+        "narration": "When the real disease arrives - your body is already ready.",
         "word_count": 12,
         "asset": "VIDEO",
         "frame": "ECU",
@@ -68490,7 +68490,7 @@
         "match_to": null,
         "mj_prompt": null,
         "runway_prompt": "Fast push as real disease arrives, memory cells immediately responding with overwhelming force, instant recognition and protection",
-        "narration_hindi": "Tumhara immune system tum paida hue tab se records rakh raha hai. Ye har battle ki biological library hai jo tumne jeeti hai."
+        "narration_hindi": "Jab real disease aaye - body pehle se ready hai."
       },
       {
         "shot_id": "S24",
@@ -68498,7 +68498,7 @@
         "tc_out": "01:14.5",
         "duration": 3.5,
         "section": "IMPACT",
-        "narration": "You get immunity without getting sick.",
+        "narration": "Remember the polio vaccine? Two drops of life? This same mechanism eliminated polio from all of India.",
         "word_count": 7,
         "asset": "IMAGE",
         "frame": "MCU",
@@ -68523,7 +68523,7 @@
         "transition_out": "dissolve",
         "match_to": "Protection to library",
         "mj_prompt": "Person fully protected and healthy, disease defeated before symptoms develop, bright health light --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": ""
+        "narration_hindi": "Polio vaccine yaad hai? Do boond zindagi ki? Isi mechanism se poore India se polio khatam kar diya."
       },
       {
         "shot_id": "S25",
@@ -68531,7 +68531,7 @@
         "tc_out": "01:17.5",
         "duration": 3,
         "section": "IMPACT",
-        "narration": "Your immune system has been keeping records since you were born.",
+        "narration": "And HIV AIDS - it's so dangerous because its virus destroys the memory cells themselves.",
         "word_count": 12,
         "asset": "VIDEO",
         "frame": "WS",
@@ -68554,7 +68554,7 @@
         "match_to": null,
         "mj_prompt": null,
         "runway_prompt": "Slow push through timeline from birth to present, immune system recording and cataloguing every battle and defense",
-        "narration_hindi": ""
+        "narration_hindi": "Aur HIV AIDS, wo isliye itna khatarnak hai kyunki uske virus memory cells ko hi khatam kar dete hain."
       },
       {
         "shot_id": "S26",
@@ -68562,7 +68562,7 @@
         "tc_out": "01:20.5",
         "duration": 3,
         "section": "IMPACT",
-        "narration": "It's a biological library of every battle you've won.",
+        "narration": "Every time you survive an infection, that battle's story is written in a biological book - forever and ever.",
         "word_count": 10,
         "asset": "IMAGE",
         "frame": "EWS",
@@ -68587,7 +68587,7 @@
         "transition_out": "fade_to_black",
         "match_to": null,
         "mj_prompt": "Vast infinite biological library of immune memory, shelves extending into infinity with glowing golden light, every battle catalogued, reverent and eternal --ar 9:16 --v 6.1 --s 400",
-        "narration_hindi": ""
+        "narration_hindi": "Tum jab bhi kisi infection se jeete ho, us sangharsh ki kahani ek biological kitaab mein hamesha hamesha ke liye likh jaati hai."
       },
       {
         "shot_id": "S27",
@@ -68656,16 +68656,16 @@
     ],
     "social_media": {
       "youtube": {
-        "title": "Chickenpox दोबारा क्यों नहीं होती? 🛡️ #shorts",
-        "description": "Immune System - Body की Memory! 🛡️\n\n🔥 Body हर disease याद रखता है\n🔥 Memory cells decades तक जीते हैं\n🔥 Vaccine = cheat code\n🔥 बिना बीमार हुए immunity\n\nBiological library of every battle you've won!\n\n👍 Like अगर interesting लगा\n💬 Comment - Vaccine लगवाई या नहीं?\n🔔 Subscribe!\n\n#immune #vaccine #biology #science #hindi #shorts #antibody #memory #health #virus",
+        "title": "Chickenpox दोबारा क्यों नहीं होता? 🛡️ #shorts",
+        "description": "Immune System - Body की Memory! 🛡️\n\n🔥 Body हर disease याद रखती है\n🔥 Memory cells decades तक जीते हैं\n🔥 Vaccine = cheat code\n🔥 बिना बीमार हुए immunity\n\nBiological library of every battle you've won!\n\n👍 Like अगर interesting लगा\n💬 Comment - Vaccine लगवाई या नहीं?\n🔔 Subscribe!\n\n#immune #vaccine #biology #science #hindi #shorts #antibody #memory #health #virus",
         "tags": "immune system hindi, vaccine hindi, antibodies hindi, memory cells, biology hindi, immunity hindi, white blood cells, science shorts hindi, amazing facts hindi, health science",
-        "pinned_comment": "Body हर disease याद रखता है 🛡️\n\nMemory cells = decades तक guard पर\n\n👍 = Amazing defense\n💬 = और कौनसा immune fact?"
+        "pinned_comment": "Body हर disease याद रखती है 🛡️\n\nMemory cells = decades तक guard पर\n\n👍 = Amazing defense\n💬 = और कौनसा immune fact?"
       },
       "instagram": {
-        "caption": "Chickenpox दोबारा क्यों नहीं होती? 🛡️\n\n• Body हर disease याद रखता है\n• Memory cells decades तक जीते हैं\n• Vaccine = weakened pathogen दिखाओ\n• Memory बनाओ बिना बीमार हुए\n\nBiological library of every battle! 📚\n\nComment \"IMMUNE\" biology facts के लिए 👇\n\n#immune #vaccine #biology #hindi #reels #science #antibody #health #virus #facts #viral #india #hindicontent #amazingfacts #memory"
+        "caption": "Chickenpox दोबारा क्यों नहीं होता? 🛡️\n\n• Body हर disease याद रखती है\n• Memory cells decades तक जीते हैं\n• Vaccine = weakened pathogen दिखाओ\n• Memory बनाओ बिना बीमार हुए\n\nBiological library of every battle! 📚\n\nComment \"IMMUNE\" biology facts के लिए 👇\n\n#immune #vaccine #biology #hindi #reels #science #antibody #health #virus #facts #viral #india #hindicontent #amazingfacts #memory"
       },
       "x": {
-        "post": "Chickenpox दोबारा क्यों नहीं होती? 🛡️\n\nBody याद रखता है!\n\n1. Pathogen आया\n2. Body ने fight किया\n3. Memory cells बने\n4. Decades तक guard पर\n\nVaccine = cheat code\nMemory बनाओ बिना बीमार हुए 💉"
+        "post": "Chickenpox दोबारा क्यों नहीं होता? 🛡️\n\nBody याद रखती है!\n\n1. Pathogen आया\n2. Body ने fight किया\n3. Memory cells बने\n4. Decades तक guard पर\n\nVaccine = cheat code\nMemory बनाओ बिना बीमार हुए 💉"
       },
       "hashtags": "#shorts #science #biology #hindi #immune #vaccine #health #india #antibody #virus"
     }
