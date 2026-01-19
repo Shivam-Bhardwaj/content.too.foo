@@ -67749,19 +67749,19 @@
     "topic_id": 92,
     "title": "Immune System - Your Body Never Forgets",
     "category": "Biology",
-    "duration_sec": 90,
-    "total_shots": 28,
+    "duration_sec": 108,
+    "total_shots": 25,
     "shot_breakdown": {
-      "video_shots": 18,
-      "image_shots": 8,
-      "text_shots": 2
+      "video_shots": 13,
+      "image_shots": 12,
+      "text_shots": 0
     },
     "shots": [
       {
         "shot_id": "S01",
-        "tc_in": "00:00.0",
-        "tc_out": "00:02.5",
-        "duration": 2.5,
+        "tc_in": "0:00",
+        "tc_out": "0:03",
+        "duration": 3,
         "section": "HOOK",
         "narration": "Did you get chickenpox as a child? It'll never come back.",
         "word_count": 10,
@@ -67790,9 +67790,9 @@
       },
       {
         "shot_id": "S02",
-        "tc_in": "00:02.5",
-        "tc_out": "00:05.0",
-        "duration": 2.5,
+        "tc_in": "0:03",
+        "tc_out": "0:05",
+        "duration": 2,
         "section": "HOOK",
         "narration": "Because your body NEVER forgets.",
         "word_count": 3,
@@ -67823,8 +67823,8 @@
       },
       {
         "shot_id": "S03",
-        "tc_in": "00:05.0",
-        "tc_out": "00:08.0",
+        "tc_in": "0:05",
+        "tc_out": "0:08",
         "duration": 3,
         "section": "HOOK",
         "narration": "It remembers every disease it's ever fought.",
@@ -67854,9 +67854,9 @@
       },
       {
         "shot_id": "S04",
-        "tc_in": "00:08.0",
-        "tc_out": "00:10.5",
-        "duration": 2.5,
+        "tc_in": "0:08",
+        "tc_out": "0:11",
+        "duration": 3,
         "section": "HOOK",
         "narration": "And that's why vaccines work.",
         "word_count": 5,
@@ -67887,9 +67887,9 @@
       },
       {
         "shot_id": "S05",
-        "tc_in": "00:10.5",
-        "tc_out": "00:13.5",
-        "duration": 3,
+        "tc_in": "0:11",
+        "tc_out": "0:15",
+        "duration": 4,
         "section": "CONTEXT",
         "narration": "Inside your body is an army. The most powerful army in the world.",
         "word_count": 12,
@@ -67918,9 +67918,9 @@
       },
       {
         "shot_id": "S06",
-        "tc_in": "00:13.5",
-        "tc_out": "00:16.5",
-        "duration": 3,
+        "tc_in": "0:15",
+        "tc_out": "0:19",
+        "duration": 4,
         "section": "CONTEXT",
         "narration": "When a virus or bacteria enters, your body attacks immediately.",
         "word_count": 11,
@@ -67951,8 +67951,8 @@
       },
       {
         "shot_id": "S07",
-        "tc_in": "00:16.5",
-        "tc_out": "00:19.5",
+        "tc_in": "0:19",
+        "tc_out": "0:22",
         "duration": 3,
         "section": "BUILD",
         "narration": "White blood cells spring into action.",
@@ -67982,9 +67982,9 @@
       },
       {
         "shot_id": "S08",
-        "tc_in": "00:19.5",
-        "tc_out": "00:23.0",
-        "duration": 3.5,
+        "tc_in": "0:22",
+        "tc_out": "0:25",
+        "duration": 3,
         "section": "BUILD",
         "narration": "But here's the genius part - your body learns.",
         "word_count": 10,
@@ -68015,9 +68015,9 @@
       },
       {
         "shot_id": "S09",
-        "tc_in": "00:23.0",
-        "tc_out": "00:26.0",
-        "duration": 3,
+        "tc_in": "0:25",
+        "tc_out": "0:33",
+        "duration": 8,
         "section": "BUILD",
         "narration": "Your body has a special cell - the B-cell. It's a factory for antibodies - chemical weapons that target only one specific invader.",
         "word_count": 8,
@@ -68048,9 +68048,9 @@
       },
       {
         "shot_id": "S10",
-        "tc_in": "00:26.0",
-        "tc_out": "00:29.0",
-        "duration": 3,
+        "tc_in": "0:33",
+        "tc_out": "0:46",
+        "duration": 13,
         "section": "BUILD",
         "narration": "Every invader has a unique shape. Antibody fits exactly onto that shape - key into lock. Locked, marked, and white blood cells finish the job.",
         "word_count": 8,
@@ -68079,9 +68079,9 @@
       },
       {
         "shot_id": "S11",
-        "tc_in": "00:29.0",
-        "tc_out": "00:32.5",
-        "duration": 3.5,
+        "tc_in": "0:46",
+        "tc_out": "0:50",
+        "duration": 4,
         "section": "REVEAL",
         "narration": "When the infection is over, most soldiers die.",
         "word_count": 10,
@@ -68110,9 +68110,9 @@
       },
       {
         "shot_id": "S12",
-        "tc_in": "00:32.5",
-        "tc_out": "00:35.5",
-        "duration": 3,
+        "tc_in": "0:50",
+        "tc_out": "0:54",
+        "duration": 4,
         "section": "REVEAL",
         "narration": "But some... some become permanent guards. Memory cells.",
         "word_count": 7,
@@ -68143,9 +68143,9 @@
       },
       {
         "shot_id": "S13",
-        "tc_in": "00:35.5",
-        "tc_out": "00:39.0",
-        "duration": 3.5,
+        "tc_in": "0:54",
+        "tc_out": "1:00",
+        "duration": 6,
         "section": "REVEAL",
         "narration": "Memory cells can live for 50 years. Longer than you! And when the same enemy returns, the reaction is 100 times faster.",
         "word_count": 12,
@@ -68174,9 +68174,9 @@
       },
       {
         "shot_id": "S14",
-        "tc_in": "00:39.0",
-        "tc_out": "00:42.5",
-        "duration": 3.5,
+        "tc_in": "1:00",
+        "tc_out": "1:04",
+        "duration": 4,
         "section": "REVEAL",
         "narration": "If that same pathogen returns? Your body says - I know you.",
         "word_count": 10,
@@ -68207,9 +68207,9 @@
       },
       {
         "shot_id": "S15",
-        "tc_in": "00:42.5",
-        "tc_out": "00:46.0",
-        "duration": 3.5,
+        "tc_in": "1:04",
+        "tc_out": "1:07",
+        "duration": 3,
         "section": "REVEAL",
         "narration": "Instant attack. Destroyed before you even feel sick.",
         "word_count": 11,
@@ -68238,9 +68238,9 @@
       },
       {
         "shot_id": "S16",
-        "tc_in": "00:46.0",
-        "tc_out": "00:49.0",
-        "duration": 3,
+        "tc_in": "1:07",
+        "tc_out": "1:09",
+        "duration": 2,
         "section": "EVIDENCE",
         "narration": "The invader doesn't stand a chance.",
         "word_count": 5,
@@ -68271,8 +68271,8 @@
       },
       {
         "shot_id": "S17",
-        "tc_in": "00:49.0",
-        "tc_out": "00:52.0",
+        "tc_in": "1:09",
+        "tc_out": "1:12",
         "duration": 3,
         "section": "EVIDENCE",
         "narration": "That's why you only get chickenpox once.",
@@ -68301,42 +68301,9 @@
         "narration_hindi": "Isliye maata sirf ek baar nikalti hai."
       },
       {
-        "shot_id": "S18",
-        "tc_in": "00:52.0",
-        "tc_out": "00:55.0",
-        "duration": 3,
-        "section": "EVIDENCE",
-        "narration": "Your body remembers.",
-        "word_count": 3,
-        "asset": "IMAGE",
-        "frame": "CU",
-        "subject": "Memory visualization, neural pathways glowing",
-        "action": null,
-        "camera": {
-          "move": "static",
-          "speed": null
-        },
-        "style": {
-          "lighting": "Warm memory gold light",
-          "mood": "reverent"
-        },
-        "text_overlay": {
-          "text": "YOUR BODY REMEMBERS",
-          "position": "lower_third"
-        },
-        "audio": {
-          "music": "swell",
-          "sfx": "ambient"
-        },
-        "transition_out": "dissolve",
-        "match_to": "Memory to vaccine",
-        "mj_prompt": "Memory visualization in glowing warm gold, neural pathways and cellular memories, lifetime of immune history recorded --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": "Tumhari body yaad rakhti hai."
-      },
-      {
         "shot_id": "S19",
-        "tc_in": "00:55.0",
-        "tc_out": "00:58.0",
+        "tc_in": "1:12",
+        "tc_out": "1:15",
         "duration": 3,
         "section": "EVIDENCE",
         "narration": "Vaccines hack this system. A cheat code.",
@@ -68366,9 +68333,9 @@
       },
       {
         "shot_id": "S20",
-        "tc_in": "00:58.0",
-        "tc_out": "01:01.5",
-        "duration": 3.5,
+        "tc_in": "1:15",
+        "tc_out": "1:19",
+        "duration": 4,
         "section": "BUILD",
         "narration": "A vaccine is a dead or half-dead version of the pathogen.",
         "word_count": 9,
@@ -68399,9 +68366,9 @@
       },
       {
         "shot_id": "S21",
-        "tc_in": "01:01.5",
-        "tc_out": "01:05.0",
-        "duration": 3.5,
+        "tc_in": "1:19",
+        "tc_out": "1:25",
+        "duration": 6,
         "section": "BUILD",
         "narration": "Your body fights it, creates memory cells, and forgets it ever happened.",
         "word_count": 11,
@@ -68430,8 +68397,8 @@
       },
       {
         "shot_id": "S22",
-        "tc_in": "01:05.0",
-        "tc_out": "01:08.0",
+        "tc_in": "1:25",
+        "tc_out": "1:28",
         "duration": 3,
         "section": "BUILD",
         "narration": "But those guards are permanently deployed.",
@@ -68463,9 +68430,9 @@
       },
       {
         "shot_id": "S23",
-        "tc_in": "01:08.0",
-        "tc_out": "01:11.0",
-        "duration": 3,
+        "tc_in": "1:28",
+        "tc_out": "1:30",
+        "duration": 2,
         "section": "IMPACT",
         "narration": "When the real disease arrives - your body is already ready.",
         "word_count": 12,
@@ -68494,9 +68461,9 @@
       },
       {
         "shot_id": "S24",
-        "tc_in": "01:11.0",
-        "tc_out": "01:14.5",
-        "duration": 3.5,
+        "tc_in": "1:30",
+        "tc_out": "1:36",
+        "duration": 6,
         "section": "IMPACT",
         "narration": "Remember the polio vaccine? Two drops of life? This same mechanism eliminated polio from all of India.",
         "word_count": 7,
@@ -68527,9 +68494,9 @@
       },
       {
         "shot_id": "S25",
-        "tc_in": "01:14.5",
-        "tc_out": "01:17.5",
-        "duration": 3,
+        "tc_in": "1:36",
+        "tc_out": "1:42",
+        "duration": 6,
         "section": "IMPACT",
         "narration": "And HIV AIDS - it's so dangerous because its virus destroys the memory cells themselves.",
         "word_count": 12,
@@ -68558,11 +68525,11 @@
       },
       {
         "shot_id": "S26",
-        "tc_in": "01:17.5",
-        "tc_out": "01:20.5",
-        "duration": 3,
+        "tc_in": "1:42",
+        "tc_out": "1:48",
+        "duration": 6,
         "section": "IMPACT",
-        "narration": "Every time you survive an infection, that battle's story is written in a biological book - forever and ever.",
+        "narration": "The body always remembers that pathogen's face.",
         "word_count": 10,
         "asset": "IMAGE",
         "frame": "EWS",
@@ -68587,71 +68554,7 @@
         "transition_out": "fade_to_black",
         "match_to": null,
         "mj_prompt": "Vast infinite biological library of immune memory, shelves extending into infinity with glowing golden light, every battle catalogued, reverent and eternal --ar 9:16 --v 6.1 --s 400",
-        "narration_hindi": "Tum jab bhi kisi infection se jeete ho, us sangharsh ki kahani ek biological kitaab mein hamesha hamesha ke liye likh jaati hai."
-      },
-      {
-        "shot_id": "S27",
-        "tc_in": "01:20.5",
-        "tc_out": "01:25.0",
-        "duration": 4.5,
-        "section": "IMPACT",
-        "narration": null,
-        "word_count": 0,
-        "asset": "TEXT",
-        "frame": "MS",
-        "subject": "Final message about immune system's power",
-        "action": null,
-        "camera": {
-          "move": "static",
-          "speed": null
-        },
-        "style": {
-          "lighting": "Dark with glowing text",
-          "mood": "contemplative"
-        },
-        "text_overlay": {
-          "text": "YOUR BODY NEVER FORGETS\nA LIFETIME OF PROTECTION\nTHANK YOUR IMMUNE SYSTEM",
-          "position": "center"
-        },
-        "audio": {
-          "music": "contemplative",
-          "sfx": "silence"
-        },
-        "transition_out": "fade_to_black",
-        "match_to": null,
-        "mj_prompt": "Dark background with glowing gold text, subtle immune system visualization in background --ar 9:16 --v 6.1 --s 350",
-        "runway_prompt": null,
-        "narration_hindi": ""
-      },
-      {
-        "shot_id": "S28",
-        "tc_in": "01:25.0",
-        "tc_out": "01:30.0",
-        "duration": 5,
-        "section": "IMPACT",
-        "narration": null,
-        "word_count": 0,
-        "asset": "IMAGE",
-        "frame": "ECU",
-        "subject": "Final image of golden immunity",
-        "action": null,
-        "camera": {
-          "move": "static",
-          "speed": null
-        },
-        "style": {
-          "lighting": "Eternal golden glow",
-          "mood": "peaceful"
-        },
-        "text_overlay": null,
-        "audio": {
-          "music": "sustain",
-          "sfx": "silence"
-        },
-        "transition_out": "fade_to_black",
-        "match_to": null,
-        "mj_prompt": "Golden glowing memory cells and antibodies in peaceful eternal arrangement, perfect health and immunity, tranquil final image --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": ""
+        "narration_hindi": "Body ko us keetanu ka chehra hamesha yaad rehta hai."
       }
     ],
     "social_media": {
