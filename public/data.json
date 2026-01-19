@@ -67784,8 +67784,8 @@
         },
         "transition_out": "cut",
         "match_to": null,
-        "mj_prompt": null,
-        "runway_prompt": "Cinematic macro shot of human torso silhouette, camera slowly pushes in, interior glowing with warm golden bioluminescence showing immune system activity, particles of light drifting upward through the body, dark blue background, subsurface scattering on skin, dramatic rim lighting, medical visualization style",
+        "mj_prompt": "Human torso silhouette from chest level, interior glowing with warm golden bioluminescence, particles of light visible inside the body, dark blue background, subsurface scattering on skin edge, dramatic rim lighting from right, cinematic medical visualization, photorealistic --ar 9:16 --v 6.1 --s 400 --q 2",
+        "runway_prompt": "Cinematic macro shot of human torso silhouette, camera slowly pushes in, interior glowing with warm golden bioluminescence showing immune system activity, particles of light drifting upward through the body, dark blue background, subsurface scattering on skin, dramatic rim lighting, medical visualization style, 5 seconds",
         "narration_hindi": "Tumhe bachpan mein maata nikli thi? Dobara kabhi nahi niklegi."
       },
       {
@@ -67848,8 +67848,8 @@
         },
         "transition_out": "cut",
         "match_to": null,
-        "mj_prompt": null,
-        "runway_prompt": "Macro view of purple spiky chickenpox virus particles approaching translucent cellular barrier, camera pushes forward, viruses bounce off and deflect away from the membrane shield, cream-colored immune cells visible behind barrier, electric cyan antibodies attached to barrier surface, dark navy plasma background with floating particles, dramatic rim lighting, medical visualization style",
+        "mj_prompt": "Purple spiky chickenpox virus particles approaching translucent cellular membrane barrier, cream-colored immune cells visible behind the barrier, electric cyan Y-shaped antibodies attached to barrier surface, dark navy blue plasma background with floating particles, dramatic rim lighting, macro medical visualization, photorealistic --ar 9:16 --v 6.1 --s 400 --q 2",
+        "runway_prompt": "Macro view of purple spiky chickenpox virus particles approaching translucent cellular barrier, camera pushes forward, viruses bounce off and deflect away from the membrane shield, cream-colored immune cells visible behind barrier, electric cyan antibodies attached to barrier surface, dark navy plasma background with floating particles, dramatic rim lighting, medical visualization style, 5 seconds",
         "narration_hindi": "Har ek bimari yaad rakhti hai jisse kabhi ladhi hai."
       },
       {
@@ -67912,8 +67912,8 @@
         },
         "transition_out": "cut",
         "match_to": null,
-        "mj_prompt": null,
-        "runway_prompt": "Epic wide shot of thousands of cream-colored white blood cells organized in military formation, camera slowly pans right across the cellular army, cells have translucent membranes with visible internal organelles, golden rim lighting, dark navy blue blood plasma background, volumetric atmosphere with floating particles, dramatic scale like an army assembling, cinematic medical visualization",
+        "mj_prompt": "Epic wide shot of thousands of cream-colored white blood cells in military formation rows, cells have translucent membranes with visible internal organelles, golden rim lighting from upper right, dark navy blue blood plasma background, volumetric atmosphere with floating particles, army scale composition, cinematic medical visualization, photorealistic --ar 9:16 --v 6.1 --s 400 --q 2",
+        "runway_prompt": "Epic wide shot of thousands of cream-colored white blood cells organized in military formation, camera slowly pans right across the cellular army, cells have translucent membranes with visible internal organelles, golden rim lighting, dark navy blue blood plasma background, volumetric atmosphere with floating particles, dramatic scale like an army assembling, cinematic medical visualization, 5 seconds",
         "narration_hindi": "Tumhari body ke andar ek army hai. Duniya ki sabse powerful army."
       },
       {
@@ -67976,8 +67976,8 @@
         },
         "transition_out": "cut",
         "match_to": null,
-        "mj_prompt": null,
-        "runway_prompt": "Extreme close-up of large cream-colored white blood cell rapidly extending pseudopod to engulf smaller purple spiky pathogen, camera pushes in fast, cell membrane stretching and wrapping around invader, golden-red combat lighting, dark navy plasma background, subsurface scattering on cell membrane, aggressive phagocytosis action, medical visualization style",
+        "mj_prompt": "Extreme close-up of large cream-colored white blood cell with translucent membrane facing smaller purple spiky pathogen, cell beginning to extend pseudopod toward invader, golden-red combat lighting, dark navy plasma background, subsurface scattering on cell membrane, tense moment before attack, macro medical visualization, photorealistic --ar 9:16 --v 6.1 --s 400 --q 2",
+        "runway_prompt": "Extreme close-up of large cream-colored white blood cell rapidly extending pseudopod to engulf smaller purple spiky pathogen, camera pushes in fast, cell membrane stretching and wrapping around invader, golden-red combat lighting, dark navy plasma background, subsurface scattering on cell membrane, aggressive phagocytosis action, medical visualization style, 5 seconds",
         "narration_hindi": "White blood cells turant action mein aa jaati hain."
       },
       {
@@ -68073,8 +68073,8 @@
         },
         "transition_out": "cut",
         "match_to": null,
-        "mj_prompt": null,
-        "runway_prompt": "Slow motion macro of Y-shaped electric cyan antibodies drifting toward purple spiky pathogen, camera slowly pushes in, antibodies lock onto spike proteins with precise molecular fit like keys into locks, satisfying click-lock moment, pathogen becomes coated and neutralized, dark navy plasma background with floating particles, blue lock-in glow effect, cinematic medical visualization",
+        "mj_prompt": "Y-shaped electric cyan antibodies floating toward purple spiky pathogen in foreground, antibodies positioned to lock onto spike proteins, dark navy blue plasma background with floating particles, blue molecular glow, macro medical visualization, precise molecular structures visible, photorealistic --ar 9:16 --v 6.1 --s 400 --q 2",
+        "runway_prompt": "Slow motion macro of Y-shaped electric cyan antibodies drifting toward purple spiky pathogen, camera slowly pushes in, antibodies lock onto spike proteins with precise molecular fit like keys into locks, satisfying click-lock moment, pathogen becomes coated and neutralized, dark navy plasma background with floating particles, blue lock-in glow effect, cinematic medical visualization, 10 seconds",
         "narration_hindi": "Har invader ka unique shape hota hai. Antibody exactly usi shape pe fit hoti hai - chaabi taale mein. Lock hua, mark hua, aur white blood cells kaam tamaam kar deti hain."
       },
       {
@@ -68104,8 +68104,8 @@
         },
         "transition_out": "dissolve",
         "match_to": "Fade to memory",
-        "mj_prompt": null,
-        "runway_prompt": "Medium wide shot of cream-colored immune cells after battle, camera slowly pulls back, cells dimming from bright gold to faded amber and dispersing peacefully, particles breaking off and dissolving into the dark navy plasma, bittersweet fading golden light, end of battle atmosphere, some cells remain bright as future memory cells, cinematic medical visualization",
+        "mj_prompt": "Medium wide shot of cream-colored immune cells glowing bright gold after battle, some cells beginning to dim to faded amber, scattered particles in the dark navy plasma background, bittersweet golden light atmosphere, a few cells remain brighter than others, end of battle scene, cinematic medical visualization, photorealistic --ar 9:16 --v 6.1 --s 400 --q 2",
+        "runway_prompt": "Medium wide shot of cream-colored immune cells after battle, camera slowly pulls back, cells dimming from bright gold to faded amber and dispersing peacefully, particles breaking off and dissolving into the dark navy plasma, bittersweet fading golden light, end of battle atmosphere, some cells remain bright as future memory cells, cinematic medical visualization, 5 seconds",
         "narration_hindi": "Jab infection khatam hota hai, zyada tar soldiers mar jaate hain."
       },
       {
@@ -68168,8 +68168,8 @@
         },
         "transition_out": "cut",
         "match_to": null,
-        "mj_prompt": null,
-        "runway_prompt": "Wide shot of golden memory cells floating in eternal vigil formation, camera slowly orbits around them, time-lapse visualization shows years passing as background shifts through day-night cycles while cells remain constant and vigilant, amber-gold glow never fading, particles drift past, eternal guardians, dark navy plasma background, cinematic medical visualization",
+        "mj_prompt": "Wide shot of golden memory cells floating in eternal vigil formation, cells glowing with bright amber-gold light, positioned as eternal guardians, particles drifting past, dark navy plasma background, timeless sentinel aesthetic, cinematic medical visualization, photorealistic --ar 9:16 --v 6.1 --s 400 --q 2",
+        "runway_prompt": "Wide shot of golden memory cells floating in eternal vigil formation, camera slowly orbits around them, time-lapse visualization shows years passing as background shifts through day-night cycles while cells remain constant and vigilant, amber-gold glow never fading, particles drift past, eternal guardians, dark navy plasma background, cinematic medical visualization, 10 seconds",
         "narration_hindi": "Memory cells 50 saal tak jee sakti hain. Tumse bhi zyada! Aur jab wahi dushman dobara aaye, reaction 100 guna fast hota hai."
       },
       {
@@ -68232,8 +68232,8 @@
         },
         "transition_out": "cut",
         "match_to": null,
-        "mj_prompt": null,
-        "runway_prompt": "Extreme close-up of memory cells rapidly dividing and multiplying, camera pushes in fast, exponential cell division with golden cells splitting and producing waves of cyan antibodies, fast-action dramatic lighting, overwhelming rapid response, tsunami of immune activity, dark navy plasma background, powerful defensive surge, cinematic medical visualization",
+        "mj_prompt": "Extreme close-up of golden memory cells beginning to divide, cell membrane pinching in middle of division, cyan antibodies starting to emerge, fast-action golden dramatic lighting, dark navy plasma background, powerful moment before surge, macro medical visualization, photorealistic --ar 9:16 --v 6.1 --s 400 --q 2",
+        "runway_prompt": "Extreme close-up of memory cells rapidly dividing and multiplying, camera pushes in fast, exponential cell division with golden cells splitting and producing waves of cyan antibodies, fast-action dramatic lighting, overwhelming rapid response, tsunami of immune activity, dark navy plasma background, powerful defensive surge, cinematic medical visualization, 5 seconds",
         "narration_hindi": "Turant attack. Tum beemar feel karo usse pehle hi khatam."
       },
       {
@@ -68296,8 +68296,8 @@
         },
         "transition_out": "cut",
         "match_to": null,
-        "mj_prompt": null,
-        "runway_prompt": "Medium shot of human silhouette with visible golden immune barrier, purple chickenpox virus particles approaching and bouncing off the protective shield, camera slowly pushes forward, shield ripples with each blocked attempt, protective golden glow, safe secure atmosphere, cinematic medical visualization",
+        "mj_prompt": "Medium shot of human silhouette with visible golden immune barrier shield around body, purple chickenpox virus particles approaching from left side, protective golden glow emanating from person, safe secure atmosphere, dark background, cinematic medical visualization, photorealistic --ar 9:16 --v 6.1 --s 400 --q 2",
+        "runway_prompt": "Medium shot of human silhouette with visible golden immune barrier, purple chickenpox virus particles approaching and bouncing off the protective shield, camera slowly pushes forward, shield ripples with each blocked attempt, protective golden glow, safe secure atmosphere, cinematic medical visualization, 5 seconds",
         "narration_hindi": "Isliye maata sirf ek baar nikalti hai."
       },
       {
@@ -68327,8 +68327,8 @@
         },
         "transition_out": "cut",
         "match_to": null,
-        "mj_prompt": null,
-        "runway_prompt": "Close-up of vaccine droplet releasing weakened ghostly-pale pathogens into bloodstream, camera pushes in slowly, pathogens are faded purple almost transparent versions, immune cells approaching cautiously to investigate, brilliant blue vaccine glow, safe training scenario atmosphere, clever hack visualization, dark navy plasma background, cinematic medical visualization",
+        "mj_prompt": "Close-up of luminous blue vaccine droplet in bloodstream, ghostly-pale transparent purple weakened pathogens emerging from droplet, cream-colored immune cells approaching cautiously from edges, brilliant blue vaccine glow, dark navy plasma background, safe clinical atmosphere, cinematic medical visualization, photorealistic --ar 9:16 --v 6.1 --s 400 --q 2",
+        "runway_prompt": "Close-up of vaccine droplet releasing weakened ghostly-pale pathogens into bloodstream, camera pushes in slowly, pathogens are faded purple almost transparent versions, immune cells approaching cautiously to investigate, brilliant blue vaccine glow, safe training scenario atmosphere, clever hack visualization, dark navy plasma background, cinematic medical visualization, 5 seconds",
         "narration_hindi": "Vaccines is system ko hack karti hain. Ek cheat code."
       },
       {
@@ -68391,8 +68391,8 @@
         },
         "transition_out": "dissolve",
         "match_to": "Memory formation",
-        "mj_prompt": null,
-        "runway_prompt": "Medium shot showing immune cells attacking weakened pale pathogen, creating memory cells and producing antibodies, camera slowly pushes through the scene, transition from attack to peaceful memory formation, golden memory cells emerging at end, learning process complete, satisfied conclusion, dark navy plasma background, cinematic medical visualization",
+        "mj_prompt": "Medium shot of cream-colored immune cells surrounding weakened pale transparent pathogen, beginning of attack, golden learning light starting to emerge, dark navy plasma background, safe training atmosphere, cinematic medical visualization, photorealistic --ar 9:16 --v 6.1 --s 400 --q 2",
+        "runway_prompt": "Medium shot showing immune cells attacking weakened pale pathogen, creating memory cells and producing antibodies, camera slowly pushes through the scene, transition from attack to peaceful memory formation, golden memory cells emerging at end, learning process complete, satisfied conclusion, dark navy plasma background, cinematic medical visualization, 10 seconds",
         "narration_hindi": "Body ladhti hai, memory cells banati hai, aur bhool jaati hai ki kuch hua tha."
       },
       {
@@ -68455,8 +68455,8 @@
         },
         "transition_out": "cut",
         "match_to": null,
-        "mj_prompt": null,
-        "runway_prompt": "Fast push into scene where real full-strength purple spiky pathogen arrives, memory cells instantly mobilize with overwhelming golden response, massive antibody wave deploying immediately, pathogen doesn't stand a chance, dramatic fast-action, instant overwhelming victory, dark navy plasma background, cinematic medical visualization",
+        "mj_prompt": "Full-strength purple spiky pathogen entering frame from left, golden memory cells alert and mobilizing on right side, massive wave of cyan antibodies beginning to deploy, dramatic fast-action lighting, dark navy plasma background, instant overwhelming response beginning, cinematic medical visualization, photorealistic --ar 9:16 --v 6.1 --s 400 --q 2",
+        "runway_prompt": "Fast push into scene where real full-strength purple spiky pathogen arrives, memory cells instantly mobilize with overwhelming golden response, massive antibody wave deploying immediately, pathogen doesn't stand a chance, dramatic fast-action, instant overwhelming victory, dark navy plasma background, cinematic medical visualization, 5 seconds",
         "narration_hindi": "Jab real disease aaye - body pehle se ready hai."
       },
       {
@@ -68519,8 +68519,8 @@
         },
         "transition_out": "cut",
         "match_to": null,
-        "mj_prompt": null,
-        "runway_prompt": "Wide shot depicting timeline visualization of immune memory from birth to present, camera slowly pushes through years marked by golden memory cell acquisitions, each disease recorded and stored, vast biological archive growing, historical archive lighting, profound accumulated wisdom, dark navy plasma background fading to infinite library, cinematic medical visualization",
+        "mj_prompt": "Wide shot of timeline visualization showing golden memory cells arranged chronologically, years marked along a flowing path, vast biological archive of immune victories, historical archive golden lighting, profound accumulated wisdom aesthetic, dark navy plasma background transitioning to infinite library feel, cinematic medical visualization, photorealistic --ar 9:16 --v 6.1 --s 400 --q 2",
+        "runway_prompt": "Wide shot depicting timeline visualization of immune memory from birth to present, camera slowly pushes through years marked by golden memory cell acquisitions, each disease recorded and stored, vast biological archive growing, historical archive lighting, profound accumulated wisdom, dark navy plasma background fading to infinite library, cinematic medical visualization, 10 seconds",
         "narration_hindi": "Aur HIV AIDS, wo isliye itna khatarnak hai kyunki uske virus memory cells ko hi khatam kar dete hain."
       },
       {
