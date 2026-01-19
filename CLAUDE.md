@@ -22,6 +22,14 @@ node scripts/update-status.js <id> published --youtube URL --instagram URL --x U
 ./scripts/sync-assets.sh <id> midjourney   # Sync Midjourney assets
 ./scripts/sync-assets.sh <id> all          # Sync all assets for topic
 ./scripts/sync-assets.sh all               # Sync everything to server
+
+# Fact Extraction
+node scripts/extract-facts.js              # Generate JSON report of all facts
+node scripts/extract-facts.js --html       # Generate interactive HTML report
+node scripts/extract-facts.js --topic 101  # Extract facts for specific topic
+
+# Version Management (run before deploy)
+node scripts/update-version.js             # Update version.json with git commit info
 ```
 
 ## File Structure
@@ -42,6 +50,8 @@ content.too.foo/
 │   ├── update-status.js       # Update topic status
 │   ├── sync-assets.sh         # Upload assets to server
 │   ├── add_hindi_narration.js # Generate Hindi narration
+│   ├── extract-facts.js       # Extract numbers, dates, names from scripts
+│   ├── update-version.js      # Update version.json with git commit info
 │   └── add_topic_101.js       # Example: adding new topic
 └── data/                      # Source data backups
 ```
@@ -151,6 +161,8 @@ content.too.foo/
 | Nature | Natural phenomena | Organic greens, flowing |
 | Math | Mathematical concepts | Abstract, geometric |
 | Unexpected | Surprising facts | Varied by topic |
+| Tech | Technology & gadgets | Sleek, futuristic, cool tones |
+| News | Current events | Documentary, urgent, dynamic |
 
 ## Workflow for Adding New Topics
 
