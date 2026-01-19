@@ -929,6 +929,28 @@
       border: 1px solid var(--border);
       border-radius: 8px;
       padding: 16px;
+      transition: all 0.2s ease;
+    }
+
+    .shot-card.done {
+      opacity: 0.6;
+      border-color: var(--green);
+    }
+
+    .shot-card.done.collapsed .shot-content {
+      display: none;
+    }
+
+    .shot-card.done.collapsed {
+      padding: 12px 16px;
+    }
+
+    .shot-card.done.collapsed .shot-header {
+      margin-bottom: 0;
+    }
+
+    .shot-content {
+      /* Wrapper for collapsible content */
     }
 
     .shot-header {
@@ -937,6 +959,90 @@
       align-items: center;
       gap: 8px;
       margin-bottom: 12px;
+    }
+
+    .shot-done-toggle {
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border: 2px solid var(--border);
+      border-radius: 4px;
+      cursor: pointer;
+      position: relative;
+      background: var(--bg-card);
+      transition: all 0.15s ease;
+      flex-shrink: 0;
+    }
+
+    .shot-done-toggle:checked {
+      background: var(--green);
+      border-color: var(--green);
+    }
+
+    .shot-done-toggle:checked::after {
+      content: '✓';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .shot-done-toggle:hover {
+      border-color: var(--green);
+    }
+
+    .shots-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      padding: 12px;
+      background: var(--bg-elevated);
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    .shots-toolbar-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .shots-progress {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    .shots-progress strong {
+      color: var(--green);
+    }
+
+    .collapse-toggle {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 12px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .collapse-toggle:hover {
+      border-color: var(--accent);
+      color: var(--text-primary);
+    }
+
+    .collapse-toggle.active {
+      background: var(--accent-light);
+      border-color: var(--accent);
+      color: var(--accent);
     }
 
     .shot-id {
@@ -1611,40 +1717,58 @@ node scripts/update-status.js 1 published --youtube URL --instagram URL</div>
         <span>${currentTopic.total_shots} shots</span>
       `;
 
-      document.getElementById('shots-list').innerHTML = currentTopic.shots.map((shot, idx) => `
-        <div class="shot-card">
+      // Render shots toolbar and list
+      const doneShots = getDoneShots(currentTopic.topic_id);
+      const collapseActive = getCollapsePreference();
+
+      document.getElementById('shots-list').innerHTML = `
+        <div class="shots-toolbar">
+          <div class="shots-toolbar-left">
+            <span class="shots-progress"><strong id="done-count">${doneShots.length}</strong> / ${currentTopic.shots.length} done</span>
+          </div>
+          <button class="collapse-toggle ${collapseActive ? 'active' : ''}" onclick="toggleCollapseAll()">
+            <span>${collapseActive ? 'Expand' : 'Collapse'}</span> done
+          </button>
+        </div>
+      ` + currentTopic.shots.map((shot, idx) => {
+        const isDone = doneShots.includes(shot.shot_id);
+        return `
+        <div class="shot-card ${isDone ? 'done' : ''} ${isDone && collapseActive ? 'collapsed' : ''}" data-shot-id="${shot.shot_id}">
           <div class="shot-header">
+            <input type="checkbox" class="shot-done-toggle" ${isDone ? 'checked' : ''} onchange="toggleShotDone('${shot.shot_id}', this)" title="Mark as done">
             <span class="shot-id">${shot.shot_id}</span>
             <span class="shot-timing">${shot.tc_in} → ${shot.tc_out}</span>
             <span class="shot-section">${shot.section}</span>
             <span class="shot-asset ${shot.asset}">${shot.asset}</span>
           </div>
-          <div class="shot-narration">
-            <div class="lang-label">English</div>
-            <div class="narration-en">"${shot.narration}"</div>
-            ${shot.narration_hindi ? `
-            <div class="lang-label">Hindi</div>
-            <div class="narration-hi">"${shot.narration_hindi}"</div>` : ''}
+          <div class="shot-content">
+            <div class="shot-narration">
+              <div class="lang-label">English</div>
+              <div class="narration-en">"${shot.narration}"</div>
+              ${shot.narration_hindi ? `
+              <div class="lang-label">Hindi</div>
+              <div class="narration-hi">"${shot.narration_hindi}"</div>` : ''}
+            </div>
+            <div class="shot-details">
+              <div class="shot-detail"><span class="detail-label">Frame:</span><span class="detail-value">${getFrameName(shot.frame)}</span></div>
+              <div class="shot-detail"><span class="detail-label">Subject:</span><span class="detail-value">${shot.subject}</span></div>
+              ${shot.camera?.move ? `<div class="shot-detail"><span class="detail-label">Camera:</span><span class="detail-value">${shot.camera.move}${shot.camera.speed ? ' (' + shot.camera.speed + ')' : ''}</span></div>` : ''}
+            </div>
+            ${shot.mj_prompt ? `
+            <div class="prompt-box">
+              <span class="prompt-label">Midjourney</span>
+              <button class="copy-btn" onclick="event.stopPropagation(); copyPrompt(this, 'mj', ${idx})">Copy</button>
+              ${shot.mj_prompt}
+            </div>` : ''}
+            ${shot.runway_prompt ? `
+            <div class="prompt-box">
+              <span class="prompt-label">Runway</span>
+              <button class="copy-btn" onclick="event.stopPropagation(); copyPrompt(this, 'runway', ${idx})">Copy</button>
+              ${shot.runway_prompt}
+            </div>` : ''}
           </div>
-          <div class="shot-details">
-            <div class="shot-detail"><span class="detail-label">Frame:</span><span class="detail-value">${getFrameName(shot.frame)}</span></div>
-            <div class="shot-detail"><span class="detail-label">Subject:</span><span class="detail-value">${shot.subject}</span></div>
-            ${shot.camera?.move ? `<div class="shot-detail"><span class="detail-label">Camera:</span><span class="detail-value">${shot.camera.move}${shot.camera.speed ? ' (' + shot.camera.speed + ')' : ''}</span></div>` : ''}
-          </div>
-          ${shot.mj_prompt ? `
-          <div class="prompt-box">
-            <span class="prompt-label">Midjourney</span>
-            <button class="copy-btn" onclick="event.stopPropagation(); copyPrompt(this, 'mj', ${idx})">Copy</button>
-            ${shot.mj_prompt}
-          </div>` : ''}
-          ${shot.runway_prompt ? `
-          <div class="prompt-box">
-            <span class="prompt-label">Runway</span>
-            <button class="copy-btn" onclick="event.stopPropagation(); copyPrompt(this, 'runway', ${idx})">Copy</button>
-            ${shot.runway_prompt}
-          </div>` : ''}
         </div>
-      `).join('');
+      `}).join('');
 
       // Reset to script tab
       switchTab('script');
@@ -1969,6 +2093,89 @@ node scripts/update-status.js 1 published --youtube URL --instagram URL</div>
       navigator.clipboard.writeText(text.replace(/\\`/g, '`').replace(/\\\$/g, '$').replace(/\\'/g, "'"));
       btn.textContent = 'Copied!';
       setTimeout(() => btn.textContent = 'Copy', 2000);
+    }
+
+    // Shot done state management (localStorage)
+    function getDoneShots(topicId) {
+      try {
+        const data = JSON.parse(localStorage.getItem('shotsDone') || '{}');
+        return data[topicId] || [];
+      } catch {
+        return [];
+      }
+    }
+
+    function saveDoneShots(topicId, shots) {
+      try {
+        const data = JSON.parse(localStorage.getItem('shotsDone') || '{}');
+        data[topicId] = shots;
+        localStorage.setItem('shotsDone', JSON.stringify(data));
+      } catch (e) {
+        console.error('Failed to save done shots:', e);
+      }
+    }
+
+    function getCollapsePreference() {
+      return localStorage.getItem('collapseDone') === 'true';
+    }
+
+    function setCollapsePreference(value) {
+      localStorage.setItem('collapseDone', value ? 'true' : 'false');
+    }
+
+    function toggleShotDone(shotId, checkbox) {
+      if (!currentTopic) return;
+
+      const topicId = currentTopic.topic_id;
+      const doneShots = getDoneShots(topicId);
+      const card = checkbox.closest('.shot-card');
+      const collapseActive = getCollapsePreference();
+
+      if (checkbox.checked) {
+        if (!doneShots.includes(shotId)) {
+          doneShots.push(shotId);
+        }
+        card.classList.add('done');
+        if (collapseActive) {
+          card.classList.add('collapsed');
+        }
+      } else {
+        const idx = doneShots.indexOf(shotId);
+        if (idx > -1) {
+          doneShots.splice(idx, 1);
+        }
+        card.classList.remove('done', 'collapsed');
+      }
+
+      saveDoneShots(topicId, doneShots);
+      updateDoneCount();
+    }
+
+    function toggleCollapseAll() {
+      const newState = !getCollapsePreference();
+      setCollapsePreference(newState);
+
+      const btn = document.querySelector('.collapse-toggle');
+      const doneCards = document.querySelectorAll('.shot-card.done');
+
+      if (newState) {
+        btn.classList.add('active');
+        btn.querySelector('span').textContent = 'Expand';
+        doneCards.forEach(card => card.classList.add('collapsed'));
+      } else {
+        btn.classList.remove('active');
+        btn.querySelector('span').textContent = 'Collapse';
+        doneCards.forEach(card => card.classList.remove('collapsed'));
+      }
+    }
+
+    function updateDoneCount() {
+      if (!currentTopic) return;
+      const doneShots = getDoneShots(currentTopic.topic_id);
+      const countEl = document.getElementById('done-count');
+      if (countEl) {
+        countEl.textContent = doneShots.length;
+      }
     }
 
     function copyPrompt(btn, type, shotIndex) {
