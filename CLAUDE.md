@@ -299,3 +299,11 @@ cat public/data.json | grep '"topic_id"' | wc -l
 9. **No hardcoded counts in UI** - Never hardcode topic counts, stats, or other data-derived numbers in the HTML. Always use JavaScript to populate these dynamically from the loaded data (e.g., `storyboards.length`). This includes taglines, About sections, and any display text that references quantities.
 
 10. **Use CSS variables** - All colors, spacing, typography, and other design tokens should use CSS custom properties defined in `:root`. Never hardcode pixel values or colors directly in component styles.
+
+11. **Always update version.json before pushing** - After committing changes, run `node scripts/update-version.js` to update the version banner, then commit that change with message "Update version.json for deployment", then push. This is the only way to know if the site has been updated. The full sequence is:
+    ```bash
+    git add . && git commit -m "Your changes"
+    node scripts/update-version.js
+    git add public/version.json && git commit -m "Update version.json for deployment"
+    git push
+    ```
