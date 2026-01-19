@@ -71,10 +71,35 @@
       text-decoration: none;
     }
     @media print {
-      body { padding: 0; }
+      body { padding: 0; margin: 0; }
       .back-link { display: none; }
-      h2 { break-before: auto; background: #eee !important; color: #000 !important; }
-      .script-block { break-inside: avoid; }
+      h2 {
+        break-before: auto;
+        break-after: avoid;
+        background: #eee !important;
+        color: #000 !important;
+        margin-top: 15px;
+      }
+      .script-block {
+        break-inside: auto;
+        page-break-inside: auto;
+        margin: 10px 0;
+        padding: 10px 15px;
+      }
+      .shot {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        margin-bottom: 10px;
+      }
+      .takes {
+        break-before: avoid;
+        margin: 5px 0 15px 0;
+      }
+      .checklist {
+        break-inside: avoid;
+      }
+      hr { margin: 10px 0; }
+      p { margin: 5px 0; }
     }
   </style>
 </head>
