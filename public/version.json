@@ -1,8 +1,8 @@
 {
-  "commit_sha": "145587f",
-  "commit_sha_full": "145587f695a4091f0302b5fe0fc074057b74b467",
-  "commit_url": "https://github.com/Shivam-Bhardwaj/content.too.foo/commit/145587f695a4091f0302b5fe0fc074057b74b467",
-  "commit_message": "Add seed image MJ prompts and duration to all Topic 92 VIDEO shots",
-  "updated_at": "2026-01-19T01:18:53-08:00",
+  "commit_sha": "7241b82",
+  "commit_sha_full": "7241b82c35ddfed47cc72e205e2d02fc77a8d6ac",
+  "commit_url": "https://github.com/Shivam-Bhardwaj/content.too.foo/commit/7241b82c35ddfed47cc72e205e2d02fc77a8d6ac",
+  "commit_message": "Add collapsible done state for shots in storyboard view",
+  "updated_at": "2026-01-19T01:41:35-08:00",
   "branch": "main"
 }
