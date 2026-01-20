@@ -1,8 +1,8 @@
 {
-  "commit_sha": "eede067",
-  "commit_sha_full": "eede067170ef9d6d7e6f18881976a1f4dc050a3e",
-  "commit_url": "https://github.com/Shivam-Bhardwaj/content.too.foo/commit/eede067170ef9d6d7e6f18881976a1f4dc050a3e",
-  "commit_message": "Fix X link showing duplicate X, improve social links spacing",
-  "updated_at": "2026-01-19T18:45:41-08:00",
+  "commit_sha": "79edb20",
+  "commit_sha_full": "79edb20c0cd57185e59b3c585faa9dfdf8da4de6",
+  "commit_url": "https://github.com/Shivam-Bhardwaj/content.too.foo/commit/79edb20c0cd57185e59b3c585faa9dfdf8da4de6",
+  "commit_message": "Add voice-to-script workflow, translate all Hindi narrations to English",
+  "updated_at": "2026-01-19T20:22:50-08:00",
   "branch": "main"
 }
