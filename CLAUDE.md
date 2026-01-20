@@ -30,6 +30,15 @@ node scripts/extract-facts.js --topic 101  # Extract facts for specific topic
 
 # Version Management (run before deploy)
 node scripts/update-version.js             # Update version.json with git commit info
+
+# Voice-to-Script Workflow (natural recording → refined script)
+node scripts/voice-to-script.js <wav-file> [topic_id]
+# Example: node scripts/voice-to-script.js "C:\path\to\recording.wav" 92
+# Outputs to ./voice-workflow/ with claude-prompt.md ready for refinement
+
+# Talking Points & SRT
+node scripts/generate-talking-points.js --save   # Generate talking points for all topics
+node scripts/export-srt.js <topic_id>            # Export SRT subtitles
 ```
 
 ## File Structure
@@ -163,6 +172,41 @@ content.too.foo/
 | Unexpected | Surprising facts | Varied by topic |
 | Tech | Technology & gadgets | Sleek, futuristic, cool tones |
 | News | Current events | Documentary, urgent, dynamic |
+
+## Voice-to-Script Workflow (Natural Recording)
+
+For natural delivery instead of reading scripts:
+
+### 1. Preparation
+- Read the original planned script in `data.json`
+- Review the Talking Points tab on the website
+- Note key numbers, names, and technical terms
+
+### 2. Record
+- Speak naturally in Hindi (don't read the script)
+- Save as WAV file
+
+### 3. Convert
+```bash
+node scripts/voice-to-script.js "path/to/recording.wav" <topic_id>
+```
+
+This uses Whisper to:
+- Transcribe Hindi (outputs in Urdu script - raw)
+- Translate to English
+
+### 4. Refine with Claude
+- Open the generated `voice-workflow/topic-XX-*/claude-prompt.md`
+- Paste into Claude
+- Get back:
+  - Clean Romanized Hindi script
+  - Shot breakdown with timecodes
+  - Midjourney prompts
+  - English subtitles
+
+### 5. Update Topic
+- Update `data.json` with new shots
+- Regenerate talking points: `node scripts/generate-talking-points.js --save`
 
 ## Workflow for Adding New Topics
 

@@ -748,6 +748,132 @@
       color: var(--accent);
     }
 
+    /* Talking Points Styles */
+    .talking-card {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-4);
+      margin-bottom: var(--space-4);
+    }
+
+    .talking-card h4 {
+      font-size: var(--text-sm);
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: var(--space-3);
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+    }
+
+    .talking-bullets {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .talking-bullets li {
+      padding: var(--space-2) 0;
+      border-bottom: 1px solid var(--border);
+      font-size: var(--text-base);
+    }
+
+    .talking-bullets li:last-child {
+      border-bottom: none;
+    }
+
+    .key-data-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--space-3);
+      margin-bottom: var(--space-4);
+    }
+
+    .key-data-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: var(--space-3);
+    }
+
+    .key-data-item h5 {
+      font-size: var(--text-xs);
+      color: var(--text-muted);
+      text-transform: uppercase;
+      margin-bottom: var(--space-2);
+    }
+
+    .key-data-item .data-values {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-1);
+    }
+
+    .data-tag {
+      background: var(--accent);
+      color: var(--bg-primary);
+      padding: 2px 8px;
+      border-radius: var(--radius-full);
+      font-size: var(--text-xs);
+      font-weight: 500;
+    }
+
+    .beat-section {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: var(--space-3);
+      margin-bottom: var(--space-3);
+    }
+
+    .beat-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: var(--space-2);
+    }
+
+    .beat-name {
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+    }
+
+    .beat-meta {
+      font-size: var(--text-xs);
+      color: var(--text-muted);
+    }
+
+    .beat-narration {
+      font-size: var(--text-sm);
+      color: var(--text-secondary);
+      line-height: 1.6;
+      max-height: 150px;
+      overflow-y: auto;
+      padding-right: 8px;
+    }
+
+    .beat-narration::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    .beat-narration::-webkit-scrollbar-track {
+      background: var(--bg-elevated);
+      border-radius: 2px;
+    }
+
+    .beat-narration::-webkit-scrollbar-thumb {
+      background: var(--border-color);
+      border-radius: 2px;
+    }
+
+    .beat-narration::-webkit-scrollbar-thumb:hover {
+      background: var(--text-muted);
+    }
+
     .script-text.english {
       color: var(--text-secondary);
       font-style: italic;
@@ -1396,6 +1522,7 @@
       <div class="modal-body">
         <div class="modal-tabs">
           <button class="modal-tab active" onclick="switchTab('script')">Script</button>
+          <button class="modal-tab" onclick="switchTab('talking')">Talking Points</button>
           <button class="modal-tab" onclick="switchTab('storyboard')">Storyboard</button>
           <button class="modal-tab" onclick="switchTab('social')">Social Media</button>
         </div>
@@ -1405,12 +1532,18 @@
             <button class="export-btn" onclick="exportMidjourney()">Export Midjourney</button>
             <button class="export-btn" onclick="exportRunway()">Export Runway</button>
             <button class="export-btn" onclick="exportJSON()">Export JSON</button>
+            <button class="export-btn" onclick="exportSRT('english')">SRT (English)</button>
+            <button class="export-btn" onclick="exportSRT('hindi')">SRT (Hindi)</button>
           </div>
           <div class="shots-list" id="shots-list"></div>
         </div>
 
         <div id="tab-script" class="tab-content active">
           <div id="script-content"></div>
+        </div>
+
+        <div id="tab-talking" class="tab-content">
+          <div id="talking-content"></div>
         </div>
 
         <div id="tab-social" class="tab-content">
@@ -1808,6 +1941,7 @@ node scripts/update-status.js 1 published --youtube URL --instagram URL</div>
 
       // Render other tabs
       renderScriptTab();
+      renderTalkingPointsTab();
       renderSocialTab();
 
       document.getElementById('modal').classList.add('active');
@@ -1991,6 +2125,117 @@ node scripts/update-status.js 1 published --youtube URL --instagram URL</div>
           <div class="script-section">
             <h4>Compiled Narration (Hindi)</h4>
             <div class="script-text hindi">${highlightFacts(hindiNarration)}</div>
+          </div>`;
+      }
+
+      container.innerHTML = html;
+    }
+
+    function renderTalkingPointsTab() {
+      const container = document.getElementById('talking-content');
+      if (!currentTopic) return;
+
+      let html = '';
+
+      // Key Data Section
+      const keyData = currentTopic.key_data;
+      if (keyData) {
+        html += `<div class="key-data-grid">`;
+
+        if (keyData.numbers && keyData.numbers.length > 0) {
+          html += `
+            <div class="key-data-item">
+              <h5>📊 Numbers to Remember</h5>
+              <div class="data-values">
+                ${keyData.numbers.map(n => `<span class="data-tag">${n}</span>`).join('')}
+              </div>
+            </div>`;
+        }
+
+        if (keyData.names && keyData.names.length > 0) {
+          html += `
+            <div class="key-data-item">
+              <h5>👤 Names to Mention</h5>
+              <div class="data-values">
+                ${keyData.names.map(n => `<span class="data-tag">${n}</span>`).join('')}
+              </div>
+            </div>`;
+        }
+
+        if (keyData.technical_terms && keyData.technical_terms.length > 0) {
+          html += `
+            <div class="key-data-item">
+              <h5>🔬 Technical Terms</h5>
+              <div class="data-values">
+                ${keyData.technical_terms.map(t => `<span class="data-tag">${t}</span>`).join('')}
+              </div>
+            </div>`;
+        }
+
+        html += `</div>`;
+      }
+
+      // Talking Points Bullets
+      const talkingPoints = currentTopic.talking_points;
+      if (talkingPoints && talkingPoints.length > 0) {
+        html += `
+          <div class="talking-card">
+            <h4>🎯 Talking Points</h4>
+            <ul class="talking-bullets">
+              ${talkingPoints.map(p => `<li>${p}</li>`).join('')}
+            </ul>
+          </div>`;
+      }
+
+      // Beat-by-beat breakdown
+      const shots = currentTopic.shots || [];
+      const sections = {};
+      shots.forEach(shot => {
+        const section = shot.section || 'OTHER';
+        if (!sections[section]) sections[section] = [];
+        sections[section].push(shot);
+      });
+
+      const sectionOrder = ['HOOK', 'CONTEXT', 'BUILD', 'CLIMAX', 'REVEAL', 'EXTENSION', 'HOOK_OUT'];
+      const sectionEmoji = {
+        'HOOK': '🎣',
+        'CONTEXT': '📖',
+        'BUILD': '📈',
+        'CLIMAX': '⚡',
+        'REVEAL': '💡',
+        'EXTENSION': '➕',
+        'HOOK_OUT': '🔗'
+      };
+
+      html += `<div class="talking-card"><h4>📋 Beat-by-Beat Breakdown</h4>`;
+
+      sectionOrder.forEach(section => {
+        if (sections[section] && sections[section].length > 0) {
+          const sectionShots = sections[section];
+          const duration = sectionShots.reduce((sum, s) => sum + (s.duration || 0), 0);
+          const narration = sectionShots.map(s => s.narration_hindi || '').filter(Boolean).join(' ');
+
+          html += `
+            <div class="beat-section">
+              <div class="beat-header">
+                <span class="beat-name">${sectionEmoji[section] || '•'} ${section}</span>
+                <span class="beat-meta">${sectionShots.length} shots · ${duration.toFixed(1)}s</span>
+              </div>
+              <div class="beat-narration">${narration}</div>
+            </div>`;
+        }
+      });
+
+      html += `</div>`;
+
+      // No data fallback
+      if (!keyData && (!talkingPoints || talkingPoints.length === 0)) {
+        html = `
+          <div class="talking-card">
+            <p style="color: var(--text-muted); text-align: center; padding: 40px;">
+              No talking points generated yet. Run:<br>
+              <code style="background: var(--bg-elevated); padding: 4px 8px; border-radius: 4px;">node scripts/generate-talking-points.js --save</code>
+            </p>
           </div>`;
       }
 
@@ -2262,6 +2507,62 @@ node scripts/update-status.js 1 published --youtube URL --instagram URL</div>
     function exportJSON() {
       if (!currentTopic) return;
       downloadText(JSON.stringify(currentTopic, null, 2), `${currentTopic.title.replace(/[^a-z0-9]/gi, '_')}.json`);
+    }
+
+    function exportSRT(language = 'english') {
+      if (!currentTopic) return;
+
+      const shots = currentTopic.shots || [];
+      let srt = '';
+      let currentTime = 0;
+      let entryNumber = 1;
+
+      shots.forEach(shot => {
+        const narration = language === 'hindi' ? shot.narration_hindi : shot.narration;
+        if (!narration || !narration.trim()) {
+          currentTime += shot.duration || 0;
+          return;
+        }
+
+        const startTime = currentTime;
+        const endTime = currentTime + (shot.duration || 4);
+
+        // Format timecodes
+        const formatTC = (seconds) => {
+          const h = Math.floor(seconds / 3600);
+          const m = Math.floor((seconds % 3600) / 60);
+          const s = Math.floor(seconds % 60);
+          const ms = Math.round((seconds % 1) * 1000);
+          return `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')},${String(ms).padStart(3,'0')}`;
+        };
+
+        // Wrap text for readability (42 chars per line max)
+        const wrapText = (text, max = 42) => {
+          if (text.length <= max) return text;
+          const words = text.split(' ');
+          const lines = [];
+          let line = '';
+          for (const word of words) {
+            if (line.length + word.length + 1 <= max) {
+              line += (line ? ' ' : '') + word;
+            } else {
+              if (line) lines.push(line);
+              line = word;
+            }
+          }
+          if (line) lines.push(line);
+          return lines.slice(0, 2).join('\n');
+        };
+
+        srt += `${entryNumber++}\n`;
+        srt += `${formatTC(startTime)} --> ${formatTC(endTime)}\n`;
+        srt += `${wrapText(narration.trim())}\n\n`;
+
+        currentTime = endTime;
+      });
+
+      const langSuffix = language === 'hindi' ? '_hi' : '_en';
+      downloadText(srt, `${currentTopic.title.replace(/[^a-z0-9]/gi, '_')}${langSuffix}.srt`);
     }
 
     function downloadText(text, filename) {
