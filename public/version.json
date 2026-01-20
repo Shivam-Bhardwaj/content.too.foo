@@ -1,8 +1,8 @@
 {
-  "commit_sha": "1f4b336",
-  "commit_sha_full": "1f4b3365ce2700abf1ef906b9db5931980f91ae1",
-  "commit_url": "https://github.com/Shivam-Bhardwaj/content.too.foo/commit/1f4b3365ce2700abf1ef906b9db5931980f91ae1",
-  "commit_message": "Update topic 99 storyboard with new voice recording",
-  "updated_at": "2026-01-19T22:07:52-08:00",
+  "commit_sha": "68ac0ae",
+  "commit_sha_full": "68ac0ae5d7b1bcb15a5638beb90289c938e08d8e",
+  "commit_url": "https://github.com/Shivam-Bhardwaj/content.too.foo/commit/68ac0ae5d7b1bcb15a5638beb90289c938e08d8e",
+  "commit_message": "Refine topic 99 Runway prompts based on actual seed images",
+  "updated_at": "2026-01-20T03:15:38-08:00",
   "branch": "main"
 }
