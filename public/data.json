@@ -75090,812 +75090,431 @@
     "topic_id": 99,
     "title": "Dunning-Kruger Effect",
     "category": "Psychology",
-    "duration_sec": 90,
-    "total_shots": 25,
+    "duration_sec": 75,
+    "total_shots": 19,
     "shot_breakdown": {
-      "video_shots": 16,
-      "image_shots": 7,
-      "text_shots": 2
+      "video_shots": 5,
+      "image_shots": 14,
+      "text_shots": 0
     },
     "shots": [
       {
         "shot_id": "S01",
-        "tc_in": "00:00.0",
-        "tc_out": "00:02.5",
-        "duration": 2.5,
-        "section": "HOOK",
-        "narration": "The less you know, the more confident you are.",
-        "word_count": 9,
+        "tc_in": "00:00:00:00",
+        "tc_out": "00:00:05:18",
+        "duration": 5.6,
+        "section": "INTRO",
+        "narration": "1999 mein David Dunning aur Justin Kruger naam ke do psychologists the.",
+        "narration_hindi": "1999 mein David Dunning aur Justin Kruger naam ke do psychologists the.",
         "asset": "VIDEO",
         "frame": "MCU",
-        "subject": "Confident person with minimal knowledge",
-        "action": "Arms raised triumphantly",
+        "subject": "Two professors in Cornell psychology department",
         "camera": {
-          "move": "push",
-          "speed": "slow"
+          "move": "static",
+          "speed": null
         },
         "style": {
-          "lighting": "Overconfident bright light",
-          "mood": "arrogant"
+          "lighting": "Warm tungsten, documentary",
+          "mood": "academic"
         },
-        "text_overlay": null,
-        "audio": {
-          "music": "build",
-          "sfx": "whoosh"
-        },
-        "transition_out": "cut",
-        "match_to": null,
-        "mj_prompt": null,
-        "runway_prompt": "Slow push toward overconfident person with arms raised, bright arrogant light",
-        "narration_hindi": "Jitna kam jaante ho, utna zyada confident."
+        "mj_prompt": "Two male professors in late 90s academic attire, Cornell psychology department hallway, warm tungsten lighting, wooden wall panels, one holding research papers, documentary film grain, neutral serious expressions, shot from chest up, --ar 9:16 --v 6.1 --s 350",
+        "runway_prompt": "Camera: Static tripod shot, no camera movement.\n\nSubject motion: Professor on LEFT slowly turns his head 20 degrees toward the professor on RIGHT over 2 seconds. His eyebrows raise slightly as if acknowledging a point. Professor on RIGHT gives one slow deliberate nod, chin moving down 3 inches then back up. The research papers in LEFT professor's hand shift slightly as his grip adjusts.\n\nEnvironment: Fluorescent ceiling light flickers once briefly at 3 second mark. No other environmental movement.\n\nTiming: First 2 seconds - stillness establishing shot. Seconds 2-4 - head turn and nod exchange. Second 5 - return to near stillness."
       },
       {
         "shot_id": "S02",
-        "tc_in": "00:02.5",
-        "tc_out": "00:05.0",
-        "duration": 2.5,
-        "section": "HOOK",
-        "narration": "The more you know, the more you doubt yourself.",
-        "word_count": 9,
-        "asset": "IMAGE",
-        "frame": "CU",
-        "subject": "Expert with thoughtful doubt",
-        "action": null,
+        "tc_in": "00:00:05:18",
+        "tc_out": "00:00:11:10",
+        "duration": 5.7,
+        "section": "INTRO",
+        "narration": "Unhone Cornell University ke kuch students ko test kiya — Logic, Grammar, aur Humour.",
+        "narration_hindi": "Unhone Cornell University ke kuch students ko test kiya — Logic, Grammar, aur Humour.",
+        "asset": "VIDEO",
+        "frame": "WS",
+        "subject": "Students taking test in 1990s exam hall",
         "camera": {
-          "move": "static",
-          "speed": null
+          "move": "crane_down",
+          "speed": "slow"
         },
         "style": {
-          "lighting": "Contemplative doubtful light",
-          "mood": "humble"
+          "lighting": "Natural window light, vintage",
+          "mood": "academic"
         },
-        "text_overlay": {
-          "text": "MORE KNOWLEDGE = MORE DOUBT",
-          "position": "center"
-        },
-        "audio": {
-          "music": "sustain",
-          "sfx": "ambient"
-        },
-        "transition_out": "cut",
-        "match_to": "Doubt to effect",
-        "mj_prompt": "Expert with thoughtful contemplative expression, uncertainty evident in kind eyes --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": "Jitna zyada jaante ho, utna zyada doubt."
+        "mj_prompt": "Bird's eye view of 1990s university exam hall, rows of students at wooden desks, pencils in hand, test papers visible, natural window light casting long shadows, vintage academic aesthetic, --ar 9:16 --v 6.1 --s 350",
+        "runway_prompt": "Camera: Slow vertical descent from 15 feet to 8 feet above desks over 5 seconds. Maintains perfect bird's eye angle throughout. Speed is constant and smooth.\n\nSubject motion: Student in CENTER FRAME taps pencil eraser on desk twice rhythmically at 1.5 and 2 second marks. Student in LOWER LEFT flips one page of test paper at 3 second mark. Student in UPPER RIGHT shifts weight in chair, shoulders moving 2 inches right at 4 second mark.\n\nEnvironment: Subtle dust particles visible floating in window light beams. Papers remain still except the one page flip.\n\nTiming: Continuous descent throughout. Student actions staggered to avoid simultaneous movement."
       },
       {
         "shot_id": "S03",
-        "tc_in": "00:05.0",
-        "tc_out": "00:08.0",
-        "duration": 3,
-        "section": "HOOK",
-        "narration": "This is the Dunning-Kruger effect.",
-        "word_count": 5,
+        "tc_in": "00:00:11:10",
+        "tc_out": "00:00:14:06",
+        "duration": 2.9,
+        "section": "INTRO",
+        "narration": "Phir unse pucha — tumhe lagta hai kaisa perform kiya hai?",
+        "narration_hindi": "Phir unse pucha — tumhe lagta hai kaisa perform kiya hai?",
         "asset": "IMAGE",
         "frame": "CU",
-        "subject": "Dunning-Kruger curve visualization",
-        "action": null,
+        "subject": "Hand hovering over self-assessment form",
         "camera": {
           "move": "static",
           "speed": null
         },
         "style": {
-          "lighting": "Graph light",
-          "mood": "analytical"
+          "lighting": "Warm side light",
+          "mood": "anticipation"
         },
-        "text_overlay": {
-          "text": "DUNNING-KRUGER EFFECT",
-          "position": "lower_third"
-        },
-        "audio": {
-          "music": "build",
-          "sfx": "whoosh"
-        },
-        "transition_out": "cut",
-        "match_to": "Curve to beginners",
-        "mj_prompt": "Dunning-Kruger effect curve displayed, confidence peaking at low knowledge --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": "Yeh hai Dunning-Kruger effect, aur yeh explain karta hai har overconfident beginner ko jo aapne kabhi dekha hai."
+        "mj_prompt": "Close-up of hand holding pencil hovering over self-assessment form, checkbox options visible Below Average / Average / Above Average, shallow depth of field, warm side light, vintage paper texture, --ar 9:16 --v 6.1 --s 400",
+        "runway_prompt": null
       },
       {
         "shot_id": "S04",
-        "tc_in": "00:08.0",
-        "tc_out": "00:11.5",
-        "duration": 3.5,
-        "section": "CONTEXT",
-        "narration": "In 1999, psychologists David Dunning and Justin Kruger tested students on logic, grammar, and humor.",
-        "word_count": 14,
-        "asset": "VIDEO",
-        "frame": "WS",
-        "subject": "Students taking tests in 1999 lab",
-        "action": "Students concentrating on tests",
+        "tc_in": "00:00:14:06",
+        "tc_out": "00:00:18:01",
+        "duration": 3.8,
+        "section": "RESULT",
+        "narration": "Sabse bekar students ne apne ko above average bola.",
+        "narration_hindi": "Sabse bekar students ne apne ko above average bola.",
+        "asset": "IMAGE",
+        "frame": "MCU",
+        "subject": "Mediocre student with C- grade looking confident",
         "camera": {
-          "move": "push",
-          "speed": "slow"
+          "move": "static",
+          "speed": null
         },
         "style": {
-          "lighting": "Lab test light",
-          "mood": "academic"
+          "lighting": "Golden hour, lens flare",
+          "mood": "ironic"
         },
-        "text_overlay": null,
-        "audio": {
-          "music": "sustain",
-          "sfx": "ambient"
-        },
-        "transition_out": "cut",
-        "match_to": null,
-        "mj_prompt": null,
-        "runway_prompt": "Slow push through 1999 laboratory showing students taking tests on logic, grammar, humor",
-        "narration_hindi": "1999 mein psychologists David Dunning aur Justin Kruger ne students ko logic, grammar, aur humor pe test kiya. Sabse bure performers ne khud ko above average rate kiya."
+        "mj_prompt": "Mediocre student with C- grade paper visible, confident smirk, thumbs pointing at chest, university corridor background soft focus, golden hour window light with lens flare, ironic framing, --ar 9:16 --v 6.1 --s 400",
+        "runway_prompt": null
       },
       {
         "shot_id": "S05",
-        "tc_in": "00:11.5",
-        "tc_out": "00:15.0",
-        "duration": 3.5,
-        "section": "BUILD",
-        "narration": "The worst performers rated themselves above average.",
-        "word_count": 6,
+        "tc_in": "00:00:18:01",
+        "tc_out": "00:00:22:08",
+        "duration": 4.2,
+        "section": "RESULT",
+        "narration": "Aur sabse badiya perform karne wale students ne apne ko under average.",
+        "narration_hindi": "Aur sabse badiya perform karne wale students ne apne ko under average.",
         "asset": "IMAGE",
-        "frame": "CU",
-        "subject": "Poor performers rating themselves highly",
-        "action": null,
+        "frame": "MCU",
+        "subject": "Top student with A+ looking uncertain",
         "camera": {
           "move": "static",
           "speed": null
         },
         "style": {
-          "lighting": "Ironic high light",
-          "mood": "ironic"
+          "lighting": "Soft diffused, cool tones",
+          "mood": "humble"
         },
-        "text_overlay": {
-          "text": "WORST PERFORMERS RATE HIGHEST",
-          "position": "center"
-        },
-        "audio": {
-          "music": "build",
-          "sfx": "whoosh"
-        },
-        "transition_out": "cut",
-        "match_to": "Worst to best",
-        "mj_prompt": "Worst test performers rating themselves as above average, ironic visual contrast --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": "Sabse acche performers?"
+        "mj_prompt": "Top student holding A+ paper but looking down with uncertainty, biting lower lip, soft diffused window light, cool muted tones, genuine self-doubt visible in posture, --ar 9:16 --v 6.1 --s 350",
+        "runway_prompt": null
       },
       {
         "shot_id": "S06",
-        "tc_in": "00:15.0",
-        "tc_out": "00:18.5",
-        "duration": 3.5,
-        "section": "BUILD",
-        "narration": "The best performers? They underestimated their scores.",
-        "word_count": 7,
+        "tc_in": "00:00:22:08",
+        "tc_out": "00:00:24:17",
+        "duration": 2.3,
+        "section": "RESULT",
+        "narration": "Us time pe kaafi shocking discovery thi.",
+        "narration_hindi": "Us time pe kaafi shocking discovery thi.",
         "asset": "IMAGE",
-        "frame": "CU",
-        "subject": "Top performers doubting their excellent results",
-        "action": null,
+        "frame": "MS",
+        "subject": "Researchers surprised by data",
         "camera": {
           "move": "static",
           "speed": null
         },
         "style": {
-          "lighting": "Humble doubt light",
-          "mood": "humble"
+          "lighting": "Warm desk lamp",
+          "mood": "surprise"
         },
-        "text_overlay": {
-          "text": "BEST PERFORMERS DOUBT THEMSELVES",
-          "position": "center"
-        },
-        "audio": {
-          "music": "sustain",
-          "sfx": "ambient"
-        },
-        "transition_out": "dissolve",
-        "match_to": "Paradox revealed",
-        "mj_prompt": "Best test performers underestimating their excellent scores, humble doubt evident --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": "Unhone apne scores underestimate kiye."
+        "mj_prompt": "Two researchers at data-covered desk, one pointing at graph showing inverse correlation, other with hand over mouth in surprise, warm desk lamp glow, 1990s computer monitor background, scattered printouts, --ar 9:16 --v 6.1 --s 350",
+        "runway_prompt": null
       },
       {
         "shot_id": "S07",
-        "tc_in": "00:18.5",
-        "tc_out": "00:22.0",
-        "duration": 3.5,
-        "section": "REVEAL",
-        "narration": "Here's why it happens: when you're bad at something, you lack the skills to recognize that you're bad. It's a brutal catch-22.",
-        "word_count": 12,
-        "asset": "VIDEO",
-        "frame": "MCU",
-        "subject": "Knowledge gap preventing self-recognition",
-        "action": "Gap in understanding visualized",
+        "tc_in": "00:00:24:17",
+        "tc_out": "00:00:27:16",
+        "duration": 3,
+        "section": "NAME",
+        "narration": "Aur is cheez ka naam pada — Dunning-Kruger Effect.",
+        "narration_hindi": "Aur is cheez ka naam pada — Dunning-Kruger Effect.",
+        "asset": "IMAGE",
+        "frame": "MS",
+        "subject": "Dunning-Kruger Effect typography with curve",
         "camera": {
-          "move": "push",
-          "speed": "slow"
+          "move": "static",
+          "speed": null
         },
         "style": {
-          "lighting": "Gap light",
-          "mood": "ironic"
+          "lighting": "Dark background, glowing text",
+          "mood": "scientific"
         },
-        "text_overlay": null,
-        "audio": {
-          "music": "build",
-          "sfx": "whoosh"
-        },
-        "transition_out": "cut",
-        "match_to": null,
-        "mj_prompt": null,
-        "runway_prompt": "Slow push showing knowledge gap preventing person from recognizing incompetence",
-        "narration_hindi": "Yeh kyun hota hai: jab aap kisi cheez mein bure ho, aapke paas skills nahi hain yeh recognize karne ki ki aap bure ho. Yeh ek brutal catch-22 hai."
+        "mj_prompt": "Clean bold typography DUNNING-KRUGER EFFECT in white sans-serif, classic confidence-competence curve below, deep navy background, subtle amber accent on curve peak, scientific journal aesthetic, minimal, --ar 9:16 --v 6.1 --s 300",
+        "runway_prompt": null
       },
       {
         "shot_id": "S08",
-        "tc_in": "00:22.0",
-        "tc_out": "00:25.5",
-        "duration": 3.5,
-        "section": "REVEAL",
-        "narration": "The knowledge needed to be competent is the same knowledge needed to recognize incompetence.",
-        "word_count": 4,
+        "tc_in": "00:00:27:16",
+        "tc_out": "00:00:30:19",
+        "duration": 3.1,
+        "section": "EXPLANATION",
+        "narration": "Sabse kam knowledge wale ko lagta hai ki unko bohot knowledge hai.",
+        "narration_hindi": "Sabse kam knowledge wale ko lagta hai ki unko bohot knowledge hai.",
         "asset": "IMAGE",
-        "frame": "CU",
-        "subject": "Catch-22 paradox visualized",
-        "action": null,
+        "frame": "WS",
+        "subject": "Person on tiny mound, massive mountains behind unseen",
         "camera": {
           "move": "static",
           "speed": null
         },
         "style": {
-          "lighting": "Paradox light",
-          "mood": "trapped"
+          "lighting": "Golden hour, epic scale",
+          "mood": "ironic"
         },
-        "text_overlay": {
-          "text": "CATCH-22",
-          "position": "center"
-        },
-        "audio": {
-          "music": "impact",
-          "sfx": "whoosh"
-        },
-        "transition_out": "cut",
-        "match_to": "Paradox to explanation",
-        "mj_prompt": "Catch-22 paradox visualized, circular trap evident --ar 9:16 --v 6.1 --s 300",
-        "narration_hindi": "Competent hone ke liye jo knowledge chahiye, wahi knowledge chahiye incompetence recognize karne ke liye."
+        "mj_prompt": "Person standing triumphantly on tiny sand mound arms raised, massive Himalayan peaks behind them unseen, dramatic scale contrast, golden hour side light, epic landscape photography style, --ar 9:16 --v 6.1 --s 450",
+        "runway_prompt": null
       },
       {
         "shot_id": "S09",
-        "tc_in": "00:25.5",
-        "tc_out": "00:29.0",
-        "duration": 3.5,
-        "section": "BUILD",
-        "narration": "Think about learning to drive.",
-        "word_count": 11,
-        "asset": "VIDEO",
+        "tc_in": "00:00:30:19",
+        "tc_out": "00:00:34:08",
+        "duration": 3.6,
+        "section": "EXPLANATION",
+        "narration": "Aur actual mein jisko knowledge hoti hai, woh hamesha doubt mein rehta hai.",
+        "narration_hindi": "Aur actual mein jisko knowledge hoti hai, woh hamesha doubt mein rehta hai.",
+        "asset": "IMAGE",
         "frame": "WS",
-        "subject": "Circular knowledge requirement",
-        "action": "Circle of understanding",
+        "subject": "Humble scholar at base of enormous mountain",
         "camera": {
-          "move": "orbit",
-          "speed": "slow"
+          "move": "static",
+          "speed": null
         },
         "style": {
-          "lighting": "Circular light",
-          "mood": "entrapped"
+          "lighting": "Cool blue atmosphere, warm lantern",
+          "mood": "humble"
         },
-        "text_overlay": null,
-        "audio": {
-          "music": "sustain",
-          "sfx": "whoosh"
-        },
-        "transition_out": "cut",
-        "match_to": null,
-        "mj_prompt": null,
-        "runway_prompt": "Slow orbit around circular knowledge requirement, same knowledge needed for competence and recognition",
-        "narration_hindi": "Driving seekhna socho."
+        "mj_prompt": "Humble scholar at base of enormous mountain, looking up at infinite peaks vanishing into clouds, small warm lantern in hand, cool blue atmospheric fog, sense of vast unknown ahead, --ar 9:16 --v 6.1 --s 400",
+        "runway_prompt": null
       },
       {
         "shot_id": "S10",
-        "tc_in": "00:29.0",
-        "tc_out": "00:32.5",
-        "duration": 3.5,
-        "section": "EVIDENCE",
-        "narration": "Think about learning to drive. Day one you're fearless.",
-        "word_count": 9,
-        "asset": "IMAGE",
+        "tc_in": "00:00:34:08",
+        "tc_out": "00:00:38:26",
+        "duration": 4.6,
+        "section": "EXAMPLES",
+        "narration": "Jaise woh WhatsApp uncle — full confidence mein kuch bhi forward kar deta hai.",
+        "narration_hindi": "Jaise woh WhatsApp uncle — full confidence mein kuch bhi forward kar deta hai.",
+        "asset": "VIDEO",
         "frame": "MCU",
-        "subject": "New driver confident on day one",
-        "action": null,
+        "subject": "Indian uncle forwarding WhatsApp messages",
         "camera": {
           "move": "static",
           "speed": null
         },
         "style": {
-          "lighting": "Overconfident light",
-          "mood": "carefree"
+          "lighting": "Green WhatsApp glow on face",
+          "mood": "comedic"
         },
-        "text_overlay": {
-          "text": "DAY 1: FEARLESS",
-          "position": "lower_third"
-        },
-        "audio": {
-          "music": "build",
-          "sfx": "whoosh"
-        },
-        "transition_out": "cut",
-        "match_to": "Fearless to scared",
-        "mj_prompt": "New driver sitting confidently in driver's seat, sunny day, fearless expression --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": "Pehle din, aap fearless ho—kitna mushkil ho sakta hai?"
+        "mj_prompt": "Middle-aged Indian uncle in living room, reading glasses pushed up on forehead, smartphone held 8 inches from face in right hand, green WhatsApp glow illuminating features, proud knowing expression, typical Indian home with wall calendar and family photos visible behind, wearing checked shirt, --ar 9:16 --v 6.1 --s 400",
+        "runway_prompt": "Camera: Static locked shot, no camera movement.\n\nSubject motion: Uncle's RIGHT THUMB taps screen twice - first tap at 0.5 seconds, second tap at 1.5 seconds (forwarding message). At 2.5 seconds, his HEAD wobbles side-to-side in classic Indian \"I know best\" gesture - two wobbles over 1.5 seconds. EYEBROWS raise at 4 seconds with satisfied expression. LEFT HAND comes up and adjusts reading glasses on forehead at 4.2 seconds.\n\nFace: Expression shifts from focused concentration (0-2s) to self-satisfied smirk (2-5s). Eyes narrow slightly with pride.\n\nEnvironment: Green phone glow pulses brighter briefly at each tap. Wall clock second hand moves naturally in background."
       },
       {
         "shot_id": "S11",
-        "tc_in": "00:32.5",
-        "tc_out": "00:36.0",
-        "duration": 3.5,
-        "section": "EVIDENCE",
-        "narration": "How hard can it be? Week two, you realize you're terrible.",
-        "word_count": 10,
+        "tc_in": "00:00:38:26",
+        "tc_out": "00:00:43:10",
+        "duration": 4.5,
+        "section": "EXAMPLES",
+        "narration": "Ya woh banda jisne abhi abhi gym join kiya hai aur sabko diet advice de raha hai.",
+        "narration_hindi": "Ya woh banda jisne abhi abhi gym join kiya hai aur sabko diet advice de raha hai.",
         "asset": "VIDEO",
-        "frame": "MCU",
-        "subject": "Struggling driver at week two",
-        "action": "Nervous handling, mistakes visible",
+        "frame": "MS",
+        "subject": "Skinny gym newbie lecturing bodybuilder",
         "camera": {
-          "move": "push",
-          "speed": "slow"
+          "move": "static",
+          "speed": null
         },
         "style": {
-          "lighting": "Anxiety light",
-          "mood": "stressed"
+          "lighting": "Harsh overhead fluorescent",
+          "mood": "comedic"
         },
-        "text_overlay": null,
-        "audio": {
-          "music": "build",
-          "sfx": "whoosh"
-        },
-        "transition_out": "cut",
-        "match_to": null,
-        "mj_prompt": null,
-        "runway_prompt": "Slow push showing driver at week two, nervous grip, mistakes apparent, stressed expression",
-        "narration_hindi": "Dusre hafte, realize hota hai ki aap terrible ho."
+        "mj_prompt": "Two men in gym: SKINNY young guy early 20s in brand new bright workout clothes standing on LEFT gesturing with hands, LARGE muscular bodybuilder mid-30s in faded tank top standing on RIGHT holding small dumbbell, gym equipment racks in background, harsh overhead fluorescent lighting, shot from waist up showing size contrast, --ar 9:16 --v 6.1 --s 400",
+        "runway_prompt": "Camera: Static locked shot, no camera movement.\n\nSubject motion LEFT (skinny guy): Hands gesture animatedly throughout. At 0-1.5 seconds, RIGHT HAND counts on fingers - index, then middle, then ring finger sequentially. At 1.5-3 seconds, BOTH HANDS wave in circular \"let me explain\" motion. At 3-4.5 seconds, hands come together in prayer position then separate outward in \"trust me\" gesture. Mouth moves as if talking continuously. Head nods emphatically.\n\nSubject motion RIGHT (bodybuilder): Nearly still throughout. At 2 seconds, SLOW BLINK lasting 0.8 seconds - patient, tolerant blink. At 3.5 seconds, slight eyebrow raise on RIGHT eyebrow only. At 4 seconds, almost imperceptible eye roll - eyes shift UP and RIGHT for 0.3 seconds then back. Gives one polite small nod at 4.3 seconds. Dumbbell in hand stays motionless.\n\nEnvironment: Gym lights constant. No background movement."
       },
       {
         "shot_id": "S12",
-        "tc_in": "00:36.0",
-        "tc_out": "00:39.5",
+        "tc_in": "00:00:43:10",
+        "tc_out": "00:00:46:26",
         "duration": 3.5,
-        "section": "EVIDENCE",
-        "narration": "Month three, getting good but feel worse about your skills.",
-        "word_count": 9,
+        "section": "EXAMPLES",
+        "narration": "Ya crypto mein 2 din hue nahi, portfolio advice dena shuru.",
+        "narration_hindi": "Ya crypto mein 2 din hue nahi, portfolio advice dena shuru.",
         "asset": "IMAGE",
-        "frame": "CU",
-        "subject": "Competent driver still doubtful",
-        "action": null,
+        "frame": "MCU",
+        "subject": "Young crypto bro giving portfolio advice",
         "camera": {
           "move": "static",
           "speed": null
         },
         "style": {
-          "lighting": "Thoughtful doubt light",
-          "mood": "humble"
+          "lighting": "Neon chart glow",
+          "mood": "comedic"
         },
-        "text_overlay": {
-          "text": "MONTH 3: DOUBT",
-          "position": "lower_third"
-        },
-        "audio": {
-          "music": "sustain",
-          "sfx": "ambient"
-        },
-        "transition_out": "dissolve",
-        "match_to": "Doubt to valley",
-        "mj_prompt": "Skilled driver looking thoughtfully concerned about their abilities, humble doubt --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": "Teesre mahine, acche hone lagte ho par feel worse karte ho apni skills ke baare mein."
+        "mj_prompt": "Young guy leaning back confidently, laptop showing volatile red-green crypto charts, phone in other hand with trading app, neon chart glow on face, messy room with energy drink cans, overconfident smirk, --ar 9:16 --v 6.1 --s 350",
+        "runway_prompt": null
       },
       {
         "shot_id": "S13",
-        "tc_in": "00:39.5",
-        "tc_out": "00:43.0",
-        "duration": 3.5,
-        "section": "BUILD",
-        "narration": "This is the valley of despair - the painful dip.",
-        "word_count": 8,
-        "asset": "VIDEO",
-        "frame": "WS",
-        "subject": "Valley visualization between competence levels",
-        "action": "Descending into valley",
+        "tc_in": "00:00:46:26",
+        "tc_out": "00:00:51:21",
+        "duration": 4.8,
+        "section": "EXAMPLES",
+        "narration": "Asli mein jo experts hote hain, woh bolte hain — \"yeh depend karta hai\", \"main sure nahi\".",
+        "narration_hindi": "Asli mein jo experts hote hain, woh bolte hain — \"yeh depend karta hai\", \"main sure nahi\".",
+        "asset": "IMAGE",
+        "frame": "MCU",
+        "subject": "Distinguished professor in study",
         "camera": {
-          "move": "push",
-          "speed": "slow"
+          "move": "static",
+          "speed": null
         },
         "style": {
-          "lighting": "Dramatic valley light",
-          "mood": "melancholic"
+          "lighting": "Warm desk lamp",
+          "mood": "wise"
         },
-        "text_overlay": null,
-        "audio": {
-          "music": "diminish",
-          "sfx": "whoosh"
-        },
-        "transition_out": "cut",
-        "match_to": null,
-        "mj_prompt": null,
-        "runway_prompt": "Slow push descending into valley of despair between ignorance and expertise",
-        "narration_hindi": "Yeh hai 'valley of despair'—woh painful dip jahan finally itna pata chal jaata hai ki realize ho ki kitna nahi pata."
+        "mj_prompt": "Distinguished professor in warm book-lined study, grey at temples, hand thoughtfully stroking chin, genuine contemplation in eyes, warm desk lamp, leather armchair, subtle knowing smile acknowledging complexity, --ar 9:16 --v 6.1 --s 400",
+        "runway_prompt": null
       },
       {
         "shot_id": "S14",
-        "tc_in": "00:43.0",
-        "tc_out": "00:46.5",
-        "duration": 3.5,
-        "section": "BUILD",
-        "narration": "Where you finally know enough to see how much you don't know.",
-        "word_count": 11,
+        "tc_in": "00:00:51:21",
+        "tc_out": "00:00:55:12",
+        "duration": 3.7,
+        "section": "SUMMARY",
+        "narration": "Basically isse samajh mein aa gaya hoga Dunning-Kruger Effect kya hai.",
+        "narration_hindi": "Basically isse samajh mein aa gaya hoga Dunning-Kruger Effect kya hai.",
         "asset": "IMAGE",
-        "frame": "EWS",
-        "subject": "Valley bottom where vast unknown becomes visible",
-        "action": null,
+        "frame": "MS",
+        "subject": "Dunning-Kruger curve infographic",
         "camera": {
           "move": "static",
           "speed": null
         },
         "style": {
-          "lighting": "Vast unknown light",
-          "mood": "humbling"
+          "lighting": "Dark background, glowing line",
+          "mood": "analytical"
         },
-        "text_overlay": {
-          "text": "AWARENESS OF IGNORANCE",
-          "position": "center"
-        },
-        "audio": {
-          "music": "sustain",
-          "sfx": "ambient"
-        },
-        "transition_out": "cut",
-        "match_to": "Valley to experts",
-        "mj_prompt": "Valley bottom where person sees vast mountain of knowledge they don't possess --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": "Experts permanent uncertainty mein rehte hain kyunki woh poori complexity dekhte hain. Danger kya hai?"
+        "mj_prompt": "Clean infographic of Dunning-Kruger curve on dark background, Peak of Mt. Stupid labeled at left peak, Valley of Despair at dip, Plateau of Sustainability rising right, glowing white line, minimal aesthetic, --ar 9:16 --v 6.1 --s 300",
+        "runway_prompt": null
       },
       {
         "shot_id": "S15",
-        "tc_in": "00:46.5",
-        "tc_out": "00:50.0",
-        "duration": 3.5,
-        "section": "EVIDENCE",
-        "narration": "Experts live in permanent uncertainty.",
-        "word_count": 4,
+        "tc_in": "00:00:55:12",
+        "tc_out": "00:01:01:25",
+        "duration": 6.4,
+        "section": "PROBLEM",
+        "narration": "Ab problem ye hai — confident log aage nikal jaate hain, aur qualified log chup reh jaate hain.",
+        "narration_hindi": "Ab problem ye hai — confident log aage nikal jaate hain, aur qualified log chup reh jaate hain.",
         "asset": "IMAGE",
-        "frame": "MCU",
-        "subject": "Expert comfortable with uncertainty",
-        "action": null,
+        "frame": "WS",
+        "subject": "Boardroom with overconfident presenter and quiet expert",
         "camera": {
           "move": "static",
           "speed": null
         },
         "style": {
-          "lighting": "Peaceful uncertainty light",
-          "mood": "wise"
+          "lighting": "Harsh corporate",
+          "mood": "ironic"
         },
-        "text_overlay": {
-          "text": "EXPERTS: UNCERTAIN",
-          "position": "center"
-        },
-        "audio": {
-          "music": "sustain",
-          "sfx": "ambient"
-        },
-        "transition_out": "cut",
-        "match_to": "Uncertainty to complexity",
-        "mj_prompt": "Expert at peace with incomplete knowledge, wisdom evident in acceptance --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": "Confident idiots promote ho jaate hain jabki qualified log chup rehte hain."
+        "mj_prompt": "Corporate boardroom, overconfident man in ill-fitting suit standing presenting at blank screen gesturing boldly, while competent woman with better ideas sits quietly in corner looking at her notes, harsh corporate lighting, glass table, ironic social commentary, --ar 9:16 --v 6.1 --s 400",
+        "runway_prompt": null
       },
       {
         "shot_id": "S16",
-        "tc_in": "00:50.0",
-        "tc_out": "00:53.5",
-        "duration": 3.5,
-        "section": "EVIDENCE",
-        "narration": "They see the full complexity.",
-        "word_count": 4,
+        "tc_in": "00:01:01:25",
+        "tc_out": "00:01:06:06",
+        "duration": 4.4,
+        "section": "SOLUTION",
+        "narration": "Solution ye hai — Struggle karo, doubt karo, par haar mat maano.",
+        "narration_hindi": "Solution ye hai — Struggle karo, doubt karo, par haar mat maano.",
         "asset": "VIDEO",
-        "frame": "WS",
-        "subject": "Expert seeing complex interconnected landscape",
-        "action": "Understanding vast system",
+        "frame": "MS",
+        "subject": "Climber on mountain at dawn",
         "camera": {
           "move": "push",
-          "speed": "slow"
+          "speed": "very_slow"
         },
         "style": {
-          "lighting": "Complexity light",
-          "mood": "awe"
+          "lighting": "Golden hour, rim light",
+          "mood": "inspirational"
         },
-        "text_overlay": null,
-        "audio": {
-          "music": "build",
-          "sfx": "whoosh"
-        },
-        "transition_out": "cut",
-        "match_to": null,
-        "mj_prompt": null,
-        "runway_prompt": "Slow push showing expert viewing vast complex system, interconnected layers visible",
-        "narration_hindi": "Solution false humility nahi hai."
+        "mj_prompt": "Solo climber on steep rocky mountain face during golden hour dawn, wearing orange jacket and climbing gear, LEFT HAND gripping rock hold above head, RIGHT HAND reaching for next hold, sweat visible on forehead, sunrise behind distant mountain peaks casting warm rim light on figure, dramatic perspective looking slightly up at climber, --ar 9:16 --v 6.1 --s 450",
+        "runway_prompt": "Camera: Very slow push in, moving 6 inches closer to climber over 5 seconds. Subtle parallax on background mountains.\n\nSubject motion: At 0-2 seconds, RIGHT HAND reaches up 10 inches and grips new rock hold, fingers wrapping around stone. At 2-3 seconds, climber PULLS UP with visible arm muscle tension, body rising 8 inches. At 3-4 seconds, climber PAUSES, chest heaving with two visible breaths, head tilts UP 15 degrees to look at path ahead. At 4-5 seconds, expression shifts from effort to determination - jaw sets, eyes narrow with resolve.\n\nEnvironment: WIND moves hair and jacket fabric gently throughout - consistent left-to-right breeze. Sunrise light INTENSIFIES gradually, rim light on shoulders becoming 20% brighter by end. Distant clouds drift slowly right-to-left behind peaks.\n\nLighting: Warm golden tones increase in intensity throughout shot."
       },
       {
         "shot_id": "S17",
-        "tc_in": "00:53.5",
-        "tc_out": "00:57.0",
-        "duration": 3.5,
-        "section": "IMPACT",
-        "narration": "The danger: confident idiots get promoted, qualified people stay quiet.",
-        "word_count": 10,
-        "asset": "VIDEO",
-        "frame": "WS",
-        "subject": "Boardroom showing overconfident person rising",
-        "action": "Confident fool being promoted",
+        "tc_in": "00:01:06:06",
+        "tc_out": "00:01:08:21",
+        "duration": 2.5,
+        "section": "CONCLUSION",
+        "narration": "Kyunki expert woh nahi jisko sab aata hai.",
+        "narration_hindi": "Kyunki expert woh nahi jisko sab aata hai.",
+        "asset": "IMAGE",
+        "frame": "MS",
+        "subject": "Person refusing crown of 'knows everything'",
         "camera": {
-          "move": "pan_L",
-          "speed": "slow"
+          "move": "static",
+          "speed": null
         },
         "style": {
-          "lighting": "Ironic promotion light",
-          "mood": "ironic"
+          "lighting": "Dramatic rim light, dark background",
+          "mood": "humble"
         },
-        "text_overlay": null,
-        "audio": {
-          "music": "build",
-          "sfx": "whoosh"
-        },
-        "transition_out": "cut",
-        "match_to": null,
-        "mj_prompt": null,
-        "runway_prompt": "Slow pan through boardroom showing overconfident person being elevated while expert remains unnoticed",
-        "narration_hindi": "Calibrated confidence hai."
+        "mj_prompt": "Symbolic: glowing crown labeled KNOWS EVERYTHING floating above, person below with palm raised in dignified refusal, dramatic rim lighting from side, dark background, humble rejection of false mastery, --ar 9:16 --v 6.1 --s 400",
+        "runway_prompt": null
       },
       {
         "shot_id": "S18",
-        "tc_in": "00:57.0",
-        "tc_out": "01:00.5",
-        "duration": 3.5,
-        "section": "IMPACT",
-        "narration": "The solution isn't false humility. It's calibrated confidence.",
-        "word_count": 7,
+        "tc_in": "00:01:08:21",
+        "tc_out": "00:01:12:04",
+        "duration": 3.4,
+        "section": "CONCLUSION",
+        "narration": "Expert woh hai jisko ye pata hai ki usko kya nahi aata.",
+        "narration_hindi": "Expert woh hai jisko ye pata hai ki usko kya nahi aata.",
         "asset": "IMAGE",
-        "frame": "CU",
-        "subject": "Balanced confidence visualization",
-        "action": null,
+        "frame": "MCU",
+        "subject": "Cartographer with map of known and unknown",
         "camera": {
           "move": "static",
           "speed": null
         },
         "style": {
-          "lighting": "Balance light",
+          "lighting": "Warm candlelight",
           "mood": "wise"
         },
-        "text_overlay": {
-          "text": "CALIBRATED CONFIDENCE",
-          "position": "center"
-        },
-        "audio": {
-          "music": "build",
-          "sfx": "whoosh"
-        },
-        "transition_out": "cut",
-        "match_to": "Balance to questions",
-        "mj_prompt": "Balanced scale showing calibrated confidence between overconfidence and humility --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": "Khud se pucho: mujhe kaise pata chalega agar main galat hun?"
+        "mj_prompt": "Wise cartographer at wooden desk, ancient map spread showing small labeled island KNOWN surrounded by vast ocean marked UNKNOWN, brass compass and candle on desk, warm candlelight, peaceful accepting expression, --ar 9:16 --v 6.1 --s 450",
+        "runway_prompt": null
       },
       {
         "shot_id": "S19",
-        "tc_in": "01:00.5",
-        "tc_out": "01:04.0",
-        "duration": 3.5,
-        "section": "IMPACT",
-        "narration": "Seek feedback.",
-        "word_count": 9,
-        "asset": "VIDEO",
+        "tc_in": "00:01:12:04",
+        "tc_out": "00:01:14:17",
+        "duration": 2.4,
+        "section": "OUTRO",
+        "narration": "Aur mujhe kuch bhi nahi aata.",
+        "narration_hindi": "Aur mujhe kuch bhi nahi aata.",
+        "asset": "IMAGE",
         "frame": "MCU",
-        "subject": "Person questioning their own beliefs",
-        "action": "Thoughtful self-examination",
-        "camera": {
-          "move": "push",
-          "speed": "slow"
-        },
-        "style": {
-          "lighting": "Introspection light",
-          "mood": "thoughtful"
-        },
-        "text_overlay": null,
-        "audio": {
-          "music": "build",
-          "sfx": "ambient"
-        },
-        "transition_out": "cut",
-        "match_to": null,
-        "mj_prompt": null,
-        "runway_prompt": "Slow push showing person engaging in self-questioning, genuine introspection",
-        "narration_hindi": "Feedback lo."
-      },
-      {
-        "shot_id": "S20",
-        "tc_in": "01:04.0",
-        "tc_out": "01:07.5",
-        "duration": 3.5,
-        "section": "IMPACT",
-        "narration": "Seek feedback. Find blind spots.",
-        "word_count": 4,
-        "asset": "IMAGE",
-        "frame": "CU",
-        "subject": "Receiving honest feedback",
-        "action": null,
+        "subject": "Friendly person shrugging",
         "camera": {
           "move": "static",
           "speed": null
         },
         "style": {
-          "lighting": "Honest light",
-          "mood": "open"
+          "lighting": "Soft warm even lighting",
+          "mood": "self-deprecating humor"
         },
-        "text_overlay": {
-          "text": "SEEK FEEDBACK",
-          "position": "center"
-        },
-        "audio": {
-          "music": "sustain",
-          "sfx": "ambient"
-        },
-        "transition_out": "dissolve",
-        "match_to": "Feedback to expertise",
-        "mj_prompt": "Person receiving honest feedback from mentor, growth-oriented acceptance --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": "Blind spots dhundho."
-      },
-      {
-        "shot_id": "S21",
-        "tc_in": "01:07.5",
-        "tc_out": "01:11.0",
-        "duration": 3.5,
-        "section": "IMPACT",
-        "narration": "True expertise isn't knowing everything.",
-        "word_count": 5,
-        "asset": "IMAGE",
-        "frame": "CU",
-        "subject": "Expert accepting limitations",
-        "action": null,
-        "camera": {
-          "move": "static",
-          "speed": null
-        },
-        "style": {
-          "lighting": "Acceptance light",
-          "mood": "wise"
-        },
-        "text_overlay": {
-          "text": "NOT KNOWING EVERYTHING",
-          "position": "center"
-        },
-        "audio": {
-          "music": "sustain",
-          "sfx": "ambient"
-        },
-        "transition_out": "cut",
-        "match_to": "Not knowing to knowing",
-        "mj_prompt": "Expert comfortable with not knowing everything, wise humble expression --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": "True expertise sab kuch jaanna nahi hai—yeh jaanna hai ki exactly kya nahi pata."
-      },
-      {
-        "shot_id": "S22",
-        "tc_in": "01:11.0",
-        "tc_out": "01:14.5",
-        "duration": 3.5,
-        "section": "IMPACT",
-        "narration": "It's knowing exactly what you don't know.",
-        "word_count": 6,
-        "asset": "VIDEO",
-        "frame": "MCU",
-        "subject": "Expert precisely aware of knowledge gaps",
-        "action": "Mapping known and unknown",
-        "camera": {
-          "move": "push",
-          "speed": "slow"
-        },
-        "style": {
-          "lighting": "Clarity light",
-          "mood": "precise"
-        },
-        "text_overlay": null,
-        "audio": {
-          "music": "swell",
-          "sfx": "whoosh"
-        },
-        "transition_out": "fade_to_black",
-        "match_to": null,
-        "mj_prompt": null,
-        "runway_prompt": "Slow push toward expert precisely mapping their knowledge boundaries",
-        "narration_hindi": ""
-      },
-      {
-        "shot_id": "S23",
-        "tc_in": "01:14.5",
-        "tc_out": "01:20.0",
-        "duration": 5.5,
-        "section": "IMPACT",
-        "narration": null,
-        "word_count": 0,
-        "asset": "TEXT",
-        "frame": "MS",
-        "subject": "Final reflection on expertise and wisdom",
-        "action": null,
-        "camera": {
-          "move": "static",
-          "speed": null
-        },
-        "style": {
-          "lighting": "Dark with glowing text",
-          "mood": "contemplative"
-        },
-        "text_overlay": {
-          "text": "WISDOM IS KNOWING YOUR LIMITS\nEXPERTISE IS MAPPING THE UNKNOWN\nTRUE CONFIDENCE ADMITS DOUBT",
-          "position": "center"
-        },
-        "audio": {
-          "music": "contemplative",
-          "sfx": "silence"
-        },
-        "transition_out": "fade_to_black",
-        "match_to": null,
-        "mj_prompt": "Dark background with glowing white text about wisdom and expertise, subtle curve graphic --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": ""
-      },
-      {
-        "shot_id": "S24",
-        "tc_in": "01:20.0",
-        "tc_out": "01:26.0",
-        "duration": 6,
-        "section": "IMPACT",
-        "narration": null,
-        "word_count": 0,
-        "asset": "IMAGE",
-        "frame": "CU",
-        "subject": "Mountain of knowledge with person climbing",
-        "action": null,
-        "camera": {
-          "move": "static",
-          "speed": null
-        },
-        "style": {
-          "lighting": "Journey light",
-          "mood": "inspiring"
-        },
-        "text_overlay": null,
-        "audio": {
-          "music": "sustain",
-          "sfx": "silence"
-        },
-        "transition_out": "fade_to_black",
-        "match_to": null,
-        "mj_prompt": "Person climbing mountain of knowledge, vast unexplored peaks ahead, journey continuing --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": ""
-      },
-      {
-        "shot_id": "S25",
-        "tc_in": "01:26.0",
-        "tc_out": "01:30.0",
-        "duration": 4,
-        "section": "IMPACT",
-        "narration": null,
-        "word_count": 0,
-        "asset": "IMAGE",
-        "frame": "MS",
-        "subject": "Valley of despair now seen as path to mastery",
-        "action": null,
-        "camera": {
-          "move": "static",
-          "speed": null
-        },
-        "style": {
-          "lighting": "Hope light",
-          "mood": "hopeful"
-        },
-        "text_overlay": null,
-        "audio": {
-          "music": "sustain",
-          "sfx": "silence"
-        },
-        "transition_out": "fade_to_black",
-        "match_to": null,
-        "mj_prompt": "Valley of despair visualized as necessary path to genuine expertise and wisdom --ar 9:16 --v 6.1 --s 350",
-        "narration_hindi": ""
+        "mj_prompt": "Friendly person shrugging with both palms up, genuine humble smile, casual everyday clothes, soft even warm lighting, relatable approachable vibe, self-deprecating humor in expression, --ar 9:16 --v 6.1 --s 300",
+        "runway_prompt": null
       }
     ],
     "social_media": {
@@ -75914,23 +75533,30 @@
       "hashtags": "#shorts #science #psychology #hindi #dunningkruger #confidence #mind #india #learning #bias"
     },
     "talking_points": [
-      "🎣 HOOK: Jitna kam jaante ho, utna zyada confident",
-      "📖 CONTEXT: 1999 mein psychologists David Dunning aur Justin Kruger ne students ko logic, grammar, aur humor pe test kiya",
-      "📈 BUILD: Sabse acche performers",
-      "💡 REVEAL: Yeh ek brutal catch-22 hai"
+      "🎬 INTRO: 1999 mein David Dunning aur Justin Kruger ne Cornell ke students ko test kiya",
+      "📊 RESULT: Bekar students ne khud ko above average bola, acche students ne underestimate kiya",
+      "🏔️ EXPLANATION: Kam knowledge = zyada confidence, zyada knowledge = zyada doubt",
+      "😂 EXAMPLES: WhatsApp uncle, naya gym member, crypto bro vs real experts",
+      "💪 CONCLUSION: Struggle karo, doubt karo, par haar mat maano"
     ],
     "key_data": {
       "numbers": [
-        "22 ",
-        "22",
-        "1999"
+        "1999",
+        "2"
       ],
       "names": [
         "David Dunning",
-        "Justin Kruger"
+        "Justin Kruger",
+        "Cornell University"
       ],
-      "technical_terms": []
-    }
+      "technical_terms": [
+        "Dunning-Kruger Effect"
+      ]
+    },
+    "script_hindi": "1999 mein David Dunning aur Justin Kruger naam ke do psychologists the. Unhone Cornell University ke kuch students ko test kiya — Logic, Grammar, aur Humour. Phir unse pucha — tumhe lagta hai kaisa perform kiya hai? Sabse bekar students ne apne ko above average bola. Aur sabse badiya perform karne wale students ne apne ko under average. Us time pe kaafi shocking discovery thi. Aur is cheez ka naam pada — Dunning-Kruger Effect. Sabse kam knowledge wale ko lagta hai ki unko bohot knowledge hai. Aur actual mein jisko knowledge hoti hai, woh hamesha doubt mein rehta hai. Jaise woh WhatsApp uncle — full confidence mein kuch bhi forward kar deta hai. Ya woh banda jisne abhi abhi gym join kiya hai aur sabko diet advice de raha hai. Ya crypto mein 2 din hue nahi, portfolio advice dena shuru. Asli mein jo experts hote hain, woh bolte hain — \"yeh depend karta hai\", \"main sure nahi\". Basically isse samajh mein aa gaya hoga Dunning-Kruger Effect kya hai. Ab problem ye hai — confident log aage nikal jaate hain, aur qualified log chup reh jaate hain. Solution ye hai — Struggle karo, doubt karo, par haar mat maano. Kyunki expert woh nahi jisko sab aata hai. Expert woh hai jisko ye pata hai ki usko kya nahi aata. Aur mujhe kuch bhi nahi aata.",
+    "script_english": "1999 mein David Dunning aur Justin Kruger naam ke do psychologists the. Unhone Cornell University ke kuch students ko test kiya — Logic, Grammar, aur Humour. Phir unse pucha — tumhe lagta hai kaisa perform kiya hai? Sabse bekar students ne apne ko above average bola. Aur sabse badiya perform karne wale students ne apne ko under average. Us time pe kaafi shocking discovery thi. Aur is cheez ka naam pada — Dunning-Kruger Effect. Sabse kam knowledge wale ko lagta hai ki unko bohot knowledge hai. Aur actual mein jisko knowledge hoti hai, woh hamesha doubt mein rehta hai. Jaise woh WhatsApp uncle — full confidence mein kuch bhi forward kar deta hai. Ya woh banda jisne abhi abhi gym join kiya hai aur sabko diet advice de raha hai. Ya crypto mein 2 din hue nahi, portfolio advice dena shuru. Asli mein jo experts hote hain, woh bolte hain — \"yeh depend karta hai\", \"main sure nahi\". Basically isse samajh mein aa gaya hoga Dunning-Kruger Effect kya hai. Ab problem ye hai — confident log aage nikal jaate hain, aur qualified log chup reh jaate hain. Solution ye hai — Struggle karo, doubt karo, par haar mat maano. Kyunki expert woh nahi jisko sab aata hai. Expert woh hai jisko ye pata hai ki usko kya nahi aata. Aur mujhe kuch bhi nahi aata.",
+    "hook": "1999 mein David Dunning aur Justin Kruger naam ke do psychologists the.",
+    "hook_english": "In 1999, David Dunning and Justin Kruger, two psychologists..."
   },
   {
     "topic_id": 100,
