@@ -75093,8 +75093,8 @@
     "duration_sec": 75,
     "total_shots": 19,
     "shot_breakdown": {
-      "video_shots": 5,
-      "image_shots": 14,
+      "video_shots": 11,
+      "image_shots": 8,
       "text_shots": 0
     },
     "shots": [
@@ -75118,7 +75118,7 @@
           "mood": "academic"
         },
         "mj_prompt": "Two male professors in late 90s academic attire, Cornell psychology department hallway, warm tungsten lighting, wooden wall panels, one holding research papers, documentary film grain, neutral serious expressions, shot from chest up, --ar 9:16 --v 6.1 --s 350",
-        "runway_prompt": "Camera: Static tripod shot, no camera movement.\n\nSubject motion: Professor on LEFT slowly turns his head 20 degrees toward the professor on RIGHT over 2 seconds. His eyebrows raise slightly as if acknowledging a point. Professor on RIGHT gives one slow deliberate nod, chin moving down 3 inches then back up. The research papers in LEFT professor's hand shift slightly as his grip adjusts.\n\nEnvironment: Fluorescent ceiling light flickers once briefly at 3 second mark. No other environmental movement.\n\nTiming: First 2 seconds - stillness establishing shot. Seconds 2-4 - head turn and nod exchange. Second 5 - return to near stillness."
+        "runway_prompt": "Camera: Static tripod, no movement.\n\nSubject LEFT (bearded professor): At 1-2s, HEAD turns 15 degrees toward RIGHT professor. EYEBROWS raise slightly in acknowledgment. PAPERS in hand shift as grip adjusts at 2.5s.\n\nSubject RIGHT (clean-shaven professor): At 2-3s, gives slow single NOD - chin drops 2 inches and returns. HANDS clasped in front remain still.\n\nEnvironment: FLUORESCENT LIGHT flickers once at 3.5s. No other movement. Warm tungsten color temperature maintained.\n\nTiming: 0-1s stillness, 1-3s interaction, 3-5s settle back to stillness."
       },
       {
         "shot_id": "S02",
@@ -75140,7 +75140,7 @@
           "mood": "academic"
         },
         "mj_prompt": "Bird's eye view of 1990s university exam hall, rows of students at wooden desks, pencils in hand, test papers visible, natural window light casting long shadows, vintage academic aesthetic, --ar 9:16 --v 6.1 --s 350",
-        "runway_prompt": "Camera: Slow vertical descent from 15 feet to 8 feet above desks over 5 seconds. Maintains perfect bird's eye angle throughout. Speed is constant and smooth.\n\nSubject motion: Student in CENTER FRAME taps pencil eraser on desk twice rhythmically at 1.5 and 2 second marks. Student in LOWER LEFT flips one page of test paper at 3 second mark. Student in UPPER RIGHT shifts weight in chair, shoulders moving 2 inches right at 4 second mark.\n\nEnvironment: Subtle dust particles visible floating in window light beams. Papers remain still except the one page flip.\n\nTiming: Continuous descent throughout. Student actions staggered to avoid simultaneous movement."
+        "runway_prompt": "Camera: Slow vertical DESCENT, starting high and moving 3 feet closer to desks over 5s. Maintain perfect bird's eye angle.\n\nSubject motion: Student in CENTER-LEFT taps PENCIL on desk twice at 1s and 1.5s. Student in LOWER-MIDDLE flips ONE PAGE at 2.5s. Student in UPPER-RIGHT shifts shoulders 2 inches at 3.5s. Student BOTTOM-CENTER scratches head briefly at 4s.\n\nEnvironment: DUST PARTICLES visible floating in diagonal window light beams throughout. Papers rustle minimally with page flip only. SHADOWS remain consistent.\n\nTiming: Stagger all student movements - no two simultaneous actions."
       },
       {
         "shot_id": "S03",
@@ -75172,7 +75172,7 @@
         "section": "RESULT",
         "narration": "Sabse bekar students ne apne ko above average bola.",
         "narration_hindi": "Sabse bekar students ne apne ko above average bola.",
-        "asset": "IMAGE",
+        "asset": "VIDEO",
         "frame": "MCU",
         "subject": "Mediocre student with C- grade looking confident",
         "camera": {
@@ -75184,7 +75184,7 @@
           "mood": "ironic"
         },
         "mj_prompt": "Mediocre student with C- grade paper visible, confident smirk, thumbs pointing at chest, university corridor background soft focus, golden hour window light with lens flare, ironic framing, --ar 9:16 --v 6.1 --s 400",
-        "runway_prompt": null
+        "runway_prompt": "Camera: Static locked shot.\n\nSubject motion: THUMBS press harder into chest at 0.5s with pride pulse. HEAD tilts BACK 10 degrees at 1-1.5s, chin rising. SMIRK WIDENS progressively from 1.5-3s, corners of mouth lifting. At 2.5s, EYEBROWS raise twice quickly in \"yeah I'm the best\" gesture. SHOULDERS roll back slightly at 3s with satisfaction.\n\nFace: Expression evolves from confident (0s) to peak smugness (3s). Eyes narrow with self-satisfaction at 2s.\n\nEnvironment: LENS FLARE pulses brighter once at 1.5s as if sun shifts. Background students walk past in soft blur at 2s."
       },
       {
         "shot_id": "S05",
@@ -75194,7 +75194,7 @@
         "section": "RESULT",
         "narration": "Aur sabse badiya perform karne wale students ne apne ko under average.",
         "narration_hindi": "Aur sabse badiya perform karne wale students ne apne ko under average.",
-        "asset": "IMAGE",
+        "asset": "VIDEO",
         "frame": "MCU",
         "subject": "Top student with A+ looking uncertain",
         "camera": {
@@ -75206,7 +75206,7 @@
           "mood": "humble"
         },
         "mj_prompt": "Top student holding A+ paper but looking down with uncertainty, biting lower lip, soft diffused window light, cool muted tones, genuine self-doubt visible in posture, --ar 9:16 --v 6.1 --s 350",
-        "runway_prompt": null
+        "runway_prompt": "Camera: Very slow PUSH IN, 2 inches closer over 5s. Intimate.\n\nSubject motion: At 0-1.5s, EYES scan paper left-to-right, re-reading grade. At 1.5-2.5s, FINGER presses harder into lip, biting more visibly. At 2.5-3.5s, HEAD SHAKES twice - small \"this can't be right\" motion. At 3.5-5s, EYES look UP and LEFT (doubt/memory), then back down. BROW furrows deeper.\n\nFace: Stays in uncertainty zone throughout. Never smiles. Micro-expressions of disbelief.\n\nEnvironment: Soft window light constant. Hair moves imperceptibly from airflow."
       },
       {
         "shot_id": "S06",
@@ -75260,7 +75260,7 @@
         "section": "EXPLANATION",
         "narration": "Sabse kam knowledge wale ko lagta hai ki unko bohot knowledge hai.",
         "narration_hindi": "Sabse kam knowledge wale ko lagta hai ki unko bohot knowledge hai.",
-        "asset": "IMAGE",
+        "asset": "VIDEO",
         "frame": "WS",
         "subject": "Person on tiny mound, massive mountains behind unseen",
         "camera": {
@@ -75272,7 +75272,7 @@
           "mood": "ironic"
         },
         "mj_prompt": "Person standing triumphantly on tiny sand mound arms raised, massive Himalayan peaks behind them unseen, dramatic scale contrast, golden hour side light, epic landscape photography style, --ar 9:16 --v 6.1 --s 450",
-        "runway_prompt": null
+        "runway_prompt": "Camera: SLOW ZOOM OUT / PULL BACK - start slightly tighter, end 15% wider to emphasize mountain scale. This is THE reveal shot.\n\nSubject motion: Person MAINTAINS victory arms throughout. At 1s, small BOUNCE on heels - excitement hop. At 2s, arms WAVE slightly side to side in celebration. HEAD turns slightly RIGHT at 2.5s as if acknowledging imaginary crowd. Completely unaware of mountains behind.\n\nEnvironment: CLOUDS drift slowly LEFT-TO-RIGHT behind peaks throughout. WIND kicks up small DUST/SAND particles around dune base. Golden rim light INTENSIFIES 15% by end.\n\nKey: The comedy is person celebrating on tiny mound while MASSIVE knowledge mountains dwarf them. Scale contrast is the story."
       },
       {
         "shot_id": "S09",
@@ -75282,7 +75282,7 @@
         "section": "EXPLANATION",
         "narration": "Aur actual mein jisko knowledge hoti hai, woh hamesha doubt mein rehta hai.",
         "narration_hindi": "Aur actual mein jisko knowledge hoti hai, woh hamesha doubt mein rehta hai.",
-        "asset": "IMAGE",
+        "asset": "VIDEO",
         "frame": "WS",
         "subject": "Humble scholar at base of enormous mountain",
         "camera": {
@@ -75294,7 +75294,7 @@
           "mood": "humble"
         },
         "mj_prompt": "Humble scholar at base of enormous mountain, looking up at infinite peaks vanishing into clouds, small warm lantern in hand, cool blue atmospheric fog, sense of vast unknown ahead, --ar 9:16 --v 6.1 --s 400",
-        "runway_prompt": null
+        "runway_prompt": "Camera: Static wide shot. Let environment move.\n\nSubject motion: Mostly STILL - meditative presence. At 1.5s, HEAD tilts UP 5 degrees, looking higher at peaks. At 3s, LANTERN HAND shifts grip slightly, lantern sways 3 inches.\n\nEnvironment: This shot is about ATMOSPHERE. FOG/MIST swirls continuously through mountain valleys, drifting RIGHT-TO-LEFT. CLOUDS drift slowly behind peaks. LANTERN FLAME flickers naturally throughout, casting dancing orange glow on robes and nearby rocks.\n\nMood: Peaceful awe at the vastness of knowledge ahead. Not defeated - humbled and inspired."
       },
       {
         "shot_id": "S10",
@@ -75316,7 +75316,7 @@
           "mood": "comedic"
         },
         "mj_prompt": "Middle-aged Indian uncle in living room, reading glasses pushed up on forehead, smartphone held 8 inches from face in right hand, green WhatsApp glow illuminating features, proud knowing expression, typical Indian home with wall calendar and family photos visible behind, wearing checked shirt, --ar 9:16 --v 6.1 --s 400",
-        "runway_prompt": "Camera: Static locked shot, no camera movement.\n\nSubject motion: Uncle's RIGHT THUMB taps screen twice - first tap at 0.5 seconds, second tap at 1.5 seconds (forwarding message). At 2.5 seconds, his HEAD wobbles side-to-side in classic Indian \"I know best\" gesture - two wobbles over 1.5 seconds. EYEBROWS raise at 4 seconds with satisfied expression. LEFT HAND comes up and adjusts reading glasses on forehead at 4.2 seconds.\n\nFace: Expression shifts from focused concentration (0-2s) to self-satisfied smirk (2-5s). Eyes narrow slightly with pride.\n\nEnvironment: Green phone glow pulses brighter briefly at each tap. Wall clock second hand moves naturally in background."
+        "runway_prompt": "Camera: Static locked shot.\n\nSubject motion: At 0.5s and 1.5s, RIGHT THUMB taps screen twice - forwarding gesture. At 2-3.5s, classic Indian HEAD WOBBLE side-to-side, two wobbles, \"I know best\" gesture. At 3.5s, EYEBROWS raise with satisfaction. At 4s, free hand comes up and adjusts GLASSES on nose. SMIRK grows wider throughout.\n\nFace: Expression shifts from focused concentration (0-1.5s) to peak self-satisfaction (4s). Eyes narrow with \"I'm helping everyone\" pride.\n\nEnvironment: GREEN phone glow pulses slightly brighter at each tap. CEILING FAN rotates slowly in background (if visible). Wall clock second hand moves."
       },
       {
         "shot_id": "S11",
@@ -75338,7 +75338,7 @@
           "mood": "comedic"
         },
         "mj_prompt": "Two men in gym: SKINNY young guy early 20s in brand new bright workout clothes standing on LEFT gesturing with hands, LARGE muscular bodybuilder mid-30s in faded tank top standing on RIGHT holding small dumbbell, gym equipment racks in background, harsh overhead fluorescent lighting, shot from waist up showing size contrast, --ar 9:16 --v 6.1 --s 400",
-        "runway_prompt": "Camera: Static locked shot, no camera movement.\n\nSubject motion LEFT (skinny guy): Hands gesture animatedly throughout. At 0-1.5 seconds, RIGHT HAND counts on fingers - index, then middle, then ring finger sequentially. At 1.5-3 seconds, BOTH HANDS wave in circular \"let me explain\" motion. At 3-4.5 seconds, hands come together in prayer position then separate outward in \"trust me\" gesture. Mouth moves as if talking continuously. Head nods emphatically.\n\nSubject motion RIGHT (bodybuilder): Nearly still throughout. At 2 seconds, SLOW BLINK lasting 0.8 seconds - patient, tolerant blink. At 3.5 seconds, slight eyebrow raise on RIGHT eyebrow only. At 4 seconds, almost imperceptible eye roll - eyes shift UP and RIGHT for 0.3 seconds then back. Gives one polite small nod at 4.3 seconds. Dumbbell in hand stays motionless.\n\nEnvironment: Gym lights constant. No background movement."
+        "runway_prompt": "Camera: Static locked shot.\n\nSubject LEFT (skinny guy in neon green): Already gesturing - continues throughout. At 0-1.5s, RIGHT HAND counts on fingers rapidly. At 1.5-3s, BOTH HANDS make circular \"trust me bro\" motions. At 3-4.5s, hands come together then spread apart in \"it's simple\" gesture. HEAD nods emphatically throughout. Mouth moves as if talking non-stop.\n\nSubject RIGHT (bodybuilder with pink dumbbells): Deliberately STILL and patient. At 1.5s, SLOW BLINK - 0.8 seconds, tolerant. At 3s, RIGHT EYEBROW raises slightly. At 4s, barely perceptible EYE ROLL - eyes shift up-right for 0.3s. At 4.3s, one small polite NOD. PINK DUMBBELLS stay motionless - effortless for him.\n\nEnvironment: Gym lights constant. Slight mirror reflection movement in background."
       },
       {
         "shot_id": "S12",
@@ -75370,7 +75370,7 @@
         "section": "EXAMPLES",
         "narration": "Asli mein jo experts hote hain, woh bolte hain — \"yeh depend karta hai\", \"main sure nahi\".",
         "narration_hindi": "Asli mein jo experts hote hain, woh bolte hain — \"yeh depend karta hai\", \"main sure nahi\".",
-        "asset": "IMAGE",
+        "asset": "VIDEO",
         "frame": "MCU",
         "subject": "Distinguished professor in study",
         "camera": {
@@ -75382,7 +75382,7 @@
           "mood": "wise"
         },
         "mj_prompt": "Distinguished professor in warm book-lined study, grey at temples, hand thoughtfully stroking chin, genuine contemplation in eyes, warm desk lamp, leather armchair, subtle knowing smile acknowledging complexity, --ar 9:16 --v 6.1 --s 400",
-        "runway_prompt": null
+        "runway_prompt": "Camera: Very slow PUSH IN, 2 inches over 5s. Respectful intimacy.\n\nSubject motion: At 0-2s, THUMB strokes chin twice slowly - classic thinking gesture. At 2-3s, EYES look UP and RIGHT (accessing deep knowledge), then return to center. At 3-4s, LIPS purse slightly then relax - almost spoke but reconsidering. At 4-5s, subtle SMILE emerges at corner of mouth - knowing, humble. One small NOD of \"it's complicated.\"\n\nFace: Journey from deep thought (0-2s) to gentle wisdom (4-5s). Eyes show depth of years of knowledge.\n\nEnvironment: LAMP LIGHT flickers subtly once at 3s. Dust particles float in lamp beam. Otherwise still - the stillness of deep contemplation."
       },
       {
         "shot_id": "S14",
@@ -75414,7 +75414,7 @@
         "section": "PROBLEM",
         "narration": "Ab problem ye hai — confident log aage nikal jaate hain, aur qualified log chup reh jaate hain.",
         "narration_hindi": "Ab problem ye hai — confident log aage nikal jaate hain, aur qualified log chup reh jaate hain.",
-        "asset": "IMAGE",
+        "asset": "VIDEO",
         "frame": "WS",
         "subject": "Boardroom with overconfident presenter and quiet expert",
         "camera": {
@@ -75426,7 +75426,7 @@
           "mood": "ironic"
         },
         "mj_prompt": "Corporate boardroom, overconfident man in ill-fitting suit standing presenting at blank screen gesturing boldly, while competent woman with better ideas sits quietly in corner looking at her notes, harsh corporate lighting, glass table, ironic social commentary, --ar 9:16 --v 6.1 --s 400",
-        "runway_prompt": null
+        "runway_prompt": "Camera: Slow PAN from LEFT to RIGHT over 5s. Start on confident presenter, end on quiet expert woman. The pan TELLS THE STORY.\n\nSubject LEFT (man in suit presenting): ARM sweeps dramatically at 0-1s pointing at nothing on blank screen. At 1-2s, touches own CHEST with \"trust me\" gesture. At 2-3s, makes another broad arm gesture. Confident stance throughout, chin up, owning the room.\n\nSubject CENTER (colleagues): One person NODS along at 1s. Another WRITES notes at 2.5s. Someone LEANS BACK impressed at 3.5s.\n\nSubject RIGHT (woman in glasses with notes): WRITES in notebook at 0-2s. At 3s, PAUSES writing, glances UP briefly at presenter with subtle frustration. At 4s, SIGHS - shoulders drop 1 inch. Returns to notes. She clearly has better ideas but won't interrupt.\n\nEnvironment: Fluorescent lights constant. Glass table shows reflections."
       },
       {
         "shot_id": "S16",
@@ -75448,7 +75448,7 @@
           "mood": "inspirational"
         },
         "mj_prompt": "Solo climber on steep rocky mountain face during golden hour dawn, wearing orange jacket and climbing gear, LEFT HAND gripping rock hold above head, RIGHT HAND reaching for next hold, sweat visible on forehead, sunrise behind distant mountain peaks casting warm rim light on figure, dramatic perspective looking slightly up at climber, --ar 9:16 --v 6.1 --s 450",
-        "runway_prompt": "Camera: Very slow push in, moving 6 inches closer to climber over 5 seconds. Subtle parallax on background mountains.\n\nSubject motion: At 0-2 seconds, RIGHT HAND reaches up 10 inches and grips new rock hold, fingers wrapping around stone. At 2-3 seconds, climber PULLS UP with visible arm muscle tension, body rising 8 inches. At 3-4 seconds, climber PAUSES, chest heaving with two visible breaths, head tilts UP 15 degrees to look at path ahead. At 4-5 seconds, expression shifts from effort to determination - jaw sets, eyes narrow with resolve.\n\nEnvironment: WIND moves hair and jacket fabric gently throughout - consistent left-to-right breeze. Sunrise light INTENSIFIES gradually, rim light on shoulders becoming 20% brighter by end. Distant clouds drift slowly right-to-left behind peaks.\n\nLighting: Warm golden tones increase in intensity throughout shot."
+        "runway_prompt": "Camera: Very slow PUSH IN, 4 inches closer over 5s. Parallax on background peaks.\n\nSubject motion: At 0-2s, RIGHT HAND reaches up and GRIPS new hold, fingers wrapping around rock. At 2-3s, climber PULLS UP with visible effort, body rising 6 inches, arm muscles tensing. At 3-4s, PAUSES - chest heaves with two visible breaths. HEAD tilts UP 15 degrees to look at path ahead. At 4-5s, expression shifts from effort to DETERMINATION - jaw sets, eyes narrow with resolve.\n\nEnvironment: WIND moves hair and RED/ORANGE jacket fabric gently throughout - left-to-right breeze. Sunset rim light INTENSIFIES gradually, growing 20% brighter by end. Distant clouds drift behind peaks."
       },
       {
         "shot_id": "S17",
